@@ -6,14 +6,14 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assests/logo.png'
 import { useState } from 'react'
 import { useMyContext } from './MyContext';
-
+import na from '../assests/profile.png'
 
 
 const user = {
   name: 'Abdullah Aleem',
   email: 'abdullhaleem2102@gmail.com',
   imageUrl:
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    na,
 }
 
 
@@ -28,8 +28,8 @@ function Navbar() {
  
   const [count,setCount]= useState(true)
 
-  const [navi, updateNavi] = useMyContext();
-
+  const [ navi, updateNavi ] = useMyContext();
+ 
   
   function updateS(item) {
     let x = navi;  

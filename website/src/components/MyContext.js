@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 
 const MyContext = createContext();
 
-export function MyContextProvider({children}) {
+export default function MyContextProvider({children}) {
     const [navi, setNavi] = useState([
         { name: 'Profile', href: '#', current: true },
         { name: 'Projects', href: 's', current: false },
@@ -15,10 +15,10 @@ export function MyContextProvider({children}) {
         setNavi(val);
     };
 
-    const contextValue = {
+    const contextValue = [
         navi,
         updateNavi,
-    };
+    ];
 
 
 
