@@ -8,7 +8,7 @@ function Profile() {
     return (
         <>
             <div className="flex flex-col md:flex-row">
-               
+
                 <div className="md:mt-20 mt-20 ml-10 flex flex-row ">
                     <div>
                         <h1 className="font-bold text-xl md:text-xl lg:text-5xl font-Times New Roman mb-2 text-gray-700">Hi !!! I am </h1>
@@ -35,7 +35,7 @@ function Profile() {
 
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={linimage} alt="" />
-                        <a className='mt-3 ml-5 text-lg font-bold  hover:text-blue-600 select-none' onClick={()=>{console.log("hello")}}>linkedin.com/in/abdullah-aleem2102</a>
+                        <a className='mt-3 ml-5 text-lg font-bold  hover:text-blue-600 select-none' onClick={() => { console.log("hello") }}>linkedin.com/in/abdullah-aleem2102</a>
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={gitimage} alt="" />
@@ -46,8 +46,14 @@ function Profile() {
                         <a className='mt-3 ml-5 text-lg font-bold  hover:text-red-600 select-none'>abdullahaleem2102@gmail.com</a>
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
-                       <input></input>
-                       <button>ddd</button>
+                        <input
+                            type="text"
+                            className="border rounded-l-md px-4 py-2 w-64 focus:outline-none"
+                            placeholder="Contact Directly"
+                        />
+                        <button className="border rounded-r-md px-4 py-2 bg-gray-300 text-gray-600 hover:bg-gray-400 ">
+                            Send
+                        </button>
                     </div>
                     <div>
 
