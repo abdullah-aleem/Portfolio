@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import image from '../assests/full.jpg'
+
 import simage from '../assests/final.jpg'
 import gitimage from '../assests/github2.png'
 import linimage from '../assests/IN.png'
 import mail from '../assests/mail4.png'
-import emailjs from '@emailjs/browser';
+
 function Profile() {
     const [emailContent, setEmailContent] = useState('');
     const handlemail= (e)=>{
@@ -52,7 +52,7 @@ function Profile() {
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={mail} alt="" />
-                        <a className='mt-3 ml-5 text-lg font-bold  hover:text-red-600 select-none'>abdullahaleem2102@gmail.com</a>
+                        <button className='mt-3 ml-5 text-lg font-bold  hover:text-red-600 select-none'>abdullahaleem2102@gmail.com</button>
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <input

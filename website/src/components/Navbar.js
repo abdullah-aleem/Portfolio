@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
-import Projects from './projects'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import Reactfrom from 'react'
+
+import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assests/logo.png'
 import { useState } from 'react'
