@@ -1,10 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import image from '../assests/full.jpg'
 import simage from '../assests/final.jpg'
 import gitimage from '../assests/github2.png'
 import linimage from '../assests/IN.png'
 import mail from '../assests/mail4.png'
+import emailjs from '@emailjs/browser';
 function Profile() {
+    const [emailContent, setEmailContent] = useState('');
+    const handlemail= (e)=>{
+        e.preventDefault()
+        const email = 'abdullahaleem2102@gmail.com';
+        const subject = 'Email from portfolio';
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+        window.location.href = mailtoLink;
+    }
     return (
         <>
             <div className="flex flex-col md:flex-row">
@@ -35,11 +44,11 @@ function Profile() {
 
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={linimage} alt="" />
-                        <a className='mt-3 ml-5 text-lg font-bold  hover:text-blue-600 select-none' onClick={() => { console.log("hello") }}>linkedin.com/in/abdullah-aleem2102</a>
+                        <a href="https://linkedin.com/in/abdullah-aleem2102"  className='mt-3 ml-5 text-lg font-bold  hover:text-blue-600'>linkedin.com/in/abdullah-aleem2102</a>
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={gitimage} alt="" />
-                        <a className='mt-3 ml-5 text-lg font-bold hover:text-white select-none'>github.com/abdullah-aleem</a>
+                        <a href="https://www.github.com/abdullah-aleem" className='mt-3 ml-5 text-lg font-bold hover:text-white '>github.com/abdullah-aleem</a>
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={mail} alt="" />
@@ -47,11 +56,13 @@ function Profile() {
                     </div>
                     <div className='mt-5 ml-10 flex flex-row'>
                         <input
+                            value={emailContent}
+                            onChange={(e) => setEmailContent(e.target.value)}
                             type="text"
                             className="border rounded-l-md px-4 py-2 w-64 focus:outline-none"
                             placeholder="Contact Directly"
                         />
-                        <button className="border rounded-r-md px-4 py-2 bg-gray-300 text-gray-600 hover:bg-gray-400 ">
+                        <button className="border rounded-r-md px-4 py-2 bg-gray-300 text-gray-600 hover:bg-gray-400 " onClick={handlemail}>
                             Send
                         </button>
                     </div>

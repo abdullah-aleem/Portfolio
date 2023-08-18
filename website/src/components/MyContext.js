@@ -5,9 +5,9 @@ const MyContext = createContext();
 export default function MyContextProvider({children}) {
     const [navi, setNavi] = useState([
         { name: 'Profile', href: '#', current: true },
-        { name: 'Projects', href: 's', current: false },
+        { name: 'Services', href: 's', current: false },
         { name: 'Proficiencies', href: '#', current: false },
-        { name: 'Contact', href: '#', current: false },
+        { name: 'Projects', href: '#', current: false },
     ]);
 
 
