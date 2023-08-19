@@ -16,7 +16,7 @@ function Profile() {
     }
     return (
         <>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col overflow-hidden md:flex-row">
 
                 <div className="md:mt-20 mt-20 ml-10 flex flex-row ">
                     <div>
@@ -40,7 +40,7 @@ function Profile() {
                 </div>
                 <div className='w-784 overflow-hidden md:w-786'>
                 </div>
-                <div className='flex flex-col justify-between  ml-10 mt-20 bg-gray-200 w-1100 h-1100 rounded-xl  '>
+                <div className='flex flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl bg-red-200 md:ml-10 md:mt-20 md:bg-gray-200 md:w-1100 md:h-1100 '>
 
                     <div className='mt-5 ml-10 flex flex-row'>
                         <img className="h-12 w-12 rounded-full " src={linimage} alt="" />
