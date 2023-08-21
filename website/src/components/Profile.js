@@ -42,19 +42,19 @@ function Profile() {
                 </div> */}
                 <div className='flex flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl  md:ml-10 md:mt-20 bg-gray-200 md:w-1100 md:h-1100 '>
 
-                    <div className='mt-5 ml-10 flex flex-row'>
-                        <img className="h-12 w-12 rounded-full " src={linimage} alt="" />
-                        <a href="https://linkedin.com/in/abdullah-aleem2102"  className='mt-3 ml-5 text-lg font-bold  hover:text-blue-600'>linkedin.com/in/abdullah-aleem2102</a>
+                    <div className='mt-5  ml-5 md:ml-10 flex flex-row'>
+                        <img className=" h-8 w-8 md:h-12 md:w-12 rounded-full " src={linimage} alt="" />
+                        <a href="https://linkedin.com/in/abdullah-aleem2102"  className='mt-1 md:mt-3 ml-5 text-md md:text-lg font-bold  hover:text-blue-600'>linkedin.com/in/abdullah-aleem2102</a>
                     </div>
-                    <div className='mt-5 ml-10 flex flex-row'>
-                        <img className="h-12 w-12 rounded-full " src={gitimage} alt="" />
-                        <a href="https://www.github.com/abdullah-aleem" className='mt-3 ml-5 text-lg font-bold hover:text-white '>github.com/abdullah-aleem</a>
+                    <div className='mt-5 ml-5  md:ml-10 flex flex-row'> 
+                        <img className="h-8 w-8  md:h-12 md:w-12 rounded-full " src={gitimage} alt="" />
+                        <a href="https://www.github.com/abdullah-aleem" className='md:mt-3 ml-5 text-md md:text-lg font-bold hover:text-white '>github.com/abdullah-aleem</a>
                     </div>
-                    <div className='mt-5 ml-10 flex flex-row'>
-                        <img className="h-12 w-12 rounded-full " src={mail} alt="" />
-                        <button className='mt-3 ml-5 text-lg font-bold  hover:text-red-600 select-none'>abdullahaleem2102@gmail.com</button>
+                    <div className='mt-5 ml-5  md:ml-10 flex flex-row'>
+                        <img className="h-8 w-8 md:h-12 md:w-12 rounded-full " src={mail} alt="" />
+                        <button className='md:mt-3 ml-5 text-md md:text-lg font-bold  hover:text-red-600 select-none'>abdullahaleem2102@gmail.com</button>
                     </div>
-                    <div className='mt-5 ml-10 flex flex-row mb-5 md:mb-0'>
+                    <div className='mt-5 ml-5  md:ml-10 flex flex-row mb-5 md:mb-0'>
                         <input
                             value={emailContent}
                             onChange={(e) => setEmailContent(e.target.value)}
