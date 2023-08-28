@@ -16,7 +16,7 @@ function Profile() {
     }
     return (
         <>
-            <div className="flex flex-col overflow-hidden md:flex-row md:mb-40">
+            <div className="flex flex-col overflow-hidden md:flex-row md:mb-60 mt-28">
 
                 <div className="w-full md:w-2/3 md:mt-20 mt-20 ml-10 flex flex-row ">
                     <div className='w-3/4' >

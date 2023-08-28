@@ -35,10 +35,11 @@ function Navbar() {
     updateNavi(x) 
     
     setCount(!count)
-    
+      
     }        
   return (
     <> 
+    <nav className='fixed top-0 left-0 w-full'>
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
@@ -194,6 +195,7 @@ function Navbar() {
 
         
       </div>
+      </nav>
     </>
   )
 }
