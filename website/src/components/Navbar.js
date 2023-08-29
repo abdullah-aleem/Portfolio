@@ -39,7 +39,7 @@ function Navbar() {
     }        
   return (
     <> 
-    <nav className='fixed top-0 left-0 w-full'>
+    <nav className='fixed top-0 left-0 w-full z-10'>
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
