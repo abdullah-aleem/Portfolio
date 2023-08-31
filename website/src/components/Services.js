@@ -18,7 +18,7 @@ import cv2 from '../assests/cpu.png'
 export default function Services() {
   return (
     <div className="w-full h-200 bg-gray-900  ">
-      <div className='flex flex-col md:flex-row '>
+      <div className='flex flex-col sm:flex-row '>
 
         <img src={exp} className='h-68 w-72 color-white' />
         <p className='mt-16 white-space-normal text-white text-3xl ml-5 font-bold w-2/4'>years of experience in solving computational problems</p>
@@ -26,7 +26,7 @@ export default function Services() {
       </div>
       <div className='flex flex-col md:flex-row justify-between'>
         <div class="mt-5 mb-5 ml-5 group h-72 w-60 [perspective:1000px]">
-          <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)][backface-visibility:hidden]">
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               {/* <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" /> */}
               <div className=' mt-32'>
@@ -50,7 +50,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
         <div class="mt-5 mb-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
