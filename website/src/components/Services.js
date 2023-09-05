@@ -1,6 +1,6 @@
 import React from 'react'
 import image from '../assests/final.jpg'
-import im2 from '../assests/full.jpg'
+import im2 from '../assests/full.jpg' 
 import exp from '../assests/exp3.png'
 import webs from '../assests/internet.png'
 import webs2 from '../assests/world-wide-web.png'
@@ -19,14 +19,15 @@ export default function Services() {
   return (
     <div className="w-full h-200 bg-gray-900  ">
       <div className='flex flex-col sm:flex-row '>
-
-        <img src={exp} className='h-68 w-72 color-white' />
-        <p className='mt-16 white-space-normal text-white text-3xl ml-5 font-bold w-2/4'>years of experience in solving computational problems</p>
-        <p className='mt-8 white-space-normal text-gray-400 text-2xl md:ml-60 '>*I have been working as a software developer, dedicated to devising effective solutions for the challenges confronted by my clients. While these represent a portion of my core responsibilities, my skill set extends well beyond these realms. </p>
+        <div className='flex flex-row'>
+          <img src={exp} className='h-48 w-60  md:h-68 md:w-72 color-white' />
+          <p className='mt-8 white-space-normal text-white text-2xl md:text-3xl ml-5 font-bold w-2/4'>years of experience in solving computational problems</p>
+        </div>
+        <p className='mt-8 white-space-normal text-gray-400 text-2xl ml-10 md:ml-60 '>*I have been working as a software developer, dedicated to devising effective solutions for the challenges confronted by my clients. While these represent a portion of my core responsibilities, my skill set extends well beyond these realms. </p>
       </div>
-      <div className='flex flex-col md:flex-row justify-between'>
+      <div className='hidden sm:flex flex-col md:flex-row justify-between'>
         <div class="mt-5 mb-5 ml-5 group h-72 w-60 [perspective:1000px]">
-          <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)][backface-visibility:hidden]">
+          <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               {/* <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" /> */}
               <div className=' mt-32'>
@@ -50,7 +51,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="mt-5 mb-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
@@ -97,7 +98,7 @@ export default function Services() {
 
                 <p class="text-sm">
                   I've dived deep into the world of automation projects and data analytics using Python, delivering impactful solutions that drive efficiency and insights. Among these achievements stands a remarkable feat: the creation of a mini search engine</p>
-                  <a href="https://www.github.com/abdullah-aleem" class="mt-4 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900"> Github</a>
+                <a href="https://www.github.com/abdullah-aleem" class="mt-4 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900"> Github</a>
               </div>
             </div>
           </div>
@@ -149,7 +150,7 @@ export default function Services() {
 
                 <p class="text-sm">
                   I've ventured into the realms of Flutter, JAVA, and React Native, crafting compelling app experiences. My journey led me to a pivotal role as a Flutter developer for a thriving startup. With over four years of experience, my expertise in React Native is formidable.</p>
-                  <a href="https://www.github.com/abdullah-aleem" class="mt-12 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900"> Github</a>
+                <a href="https://www.github.com/abdullah-aleem" class="mt-12 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900"> Github</a>
               </div>
             </div>
           </div>

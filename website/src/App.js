@@ -21,7 +21,6 @@ function App() {
     <MyContextProvider>
       <Navbar  scroll={scroll} re={[proRef,serRef]}/>
     <div ref={proRef}>
-
       <Profile />
     </div>
     <div ref={serRef}>
