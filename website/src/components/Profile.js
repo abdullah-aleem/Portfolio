@@ -22,7 +22,7 @@ function Profile() {
  
     return (
         <  >
-            <div   className="flex flex-col mt-7 overflow-hidden md:flex-row md:mb-20 md:mt-28">
+            <div   className="flex flex-col mt-7 overflow-hidden md:flex-row md:mb-40 md:mt-28">
 
                 <div className="w-full md:w-2/3 md:mt-20 mt-20 ml-5 md:ml-10 flex flex-row ">
                     <div className='w-3/4' >

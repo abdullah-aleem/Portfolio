@@ -156,6 +156,23 @@ export default function Services() {
           </div>
         </div>
       </div>
+    <div className=' flex md:hidden '>
+      <button className=' h-20 w-24 bg-gray-400 rounded-2xl shadow-xl shadow-black/40'  >
+        hello
+      </button>
+      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
+        hello
+      </button>
+      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
+        hello
+      </button>
+      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
+        hello
+      </button>
+      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
+        hello
+      </button>
+    </div>
     </div>
   )
 }
