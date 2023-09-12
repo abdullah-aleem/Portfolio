@@ -17,7 +17,7 @@ import cv2 from '../assests/cpu.png'
 
 export default function Services() {
   return (
-    <div className="w-full h-200 bg-gray-900  ">
+    <div className="w-full h-200 bg-gray-900 pb-20 pt-10">
       <div className='flex flex-col sm:flex-row '>
         <div className='flex flex-row'>
           <img src={exp} className='h-48 w-60  md:h-68 md:w-72 color-white' />
@@ -156,21 +156,51 @@ export default function Services() {
           </div>
         </div>
       </div>
-    <div className=' flex md:hidden '>
-      <button className=' h-20 w-24 bg-gray-400 rounded-2xl shadow-xl shadow-black/40'  >
-        hello
+    <div className=' flex md:hidden mt-6'>
+      <div className='ml-3 w-full flex flex-col '>
+      <div className=' flex flex-row justify-between w-3/3'>
+      <button className=' h-24 w-3/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
+        <div className='flex flex-row'>
+        <img src={webs} className='ml-2 h-8 w-8'/>
+        <img src={webs2} className='ml-2 h-8 w-8'/>
+        </div>
+        Web Development
       </button>
-      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
-        hello
+      <button className='ml-1 h-24 w-2/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
+      <div className='flex flex-row'>
+        <img src={moniter} className='ml-8 h-8 w-8'/>
+        
+        </div>
+        Desktop
+        Apps
       </button>
-      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
-        hello
+      </div>
+      
+      <div className='mt-2 flex flex-row justify-between w-3/3 '>
+      <button className=' h-24 w-1/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
+      <div className='flex flex-row '>
+        <img src={cv2} className='ml-6 h-8 w-8'/>
+        
+        </div>
+        CV/ML
       </button>
-      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
-        hello
+      <button className='ml-1 h-24 w-2/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
+      <div className='flex flex-row '>
+        <img src={ios} className='ml-8 h-8 w-8'/>
+        <img src={and} className='ml-1 h-8 w-8'/>
+        
+        </div>
+        Mobile Application
       </button>
-      <button className=' h-20 w-24 bg-gray-400 rounded-2xl'  >
-        hello
+      
+      </div>
+      </div>
+      <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
+      <div className='flex flex-row'>
+        <img src={automation} className='ml-4 h-8 w-8'/>        
+        <img src={automation2} className='ml-1 h-8 w-8'/>        
+        </div>
+        Automation
       </button>
     </div>
     </div>
