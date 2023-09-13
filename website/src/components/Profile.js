@@ -15,8 +15,22 @@ function Profile() {
         e.preventDefault()
         const email = 'abdullahaleem2102@gmail.com';
         const subject = 'Email from portfolio';
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
-        window.location.href = mailtoLink;
+        fetch('http://localhost:3000/sendMail',{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json',
+            },
+            body:JSON.stringify({message:emailContent})
+        }).then(res=>{
+            if(!res.ok){
+                throw new Error('Network response was not ok')
+            }
+            return res.json();
+        }).then(data=>{
+            console.log(data);
+        })
+        // const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+        // window.location.href = mailtoLink;
     }
 
  
@@ -81,5 +95,6 @@ function Profile() {
         </>
     );
 }
+
 
 export default Profile       
