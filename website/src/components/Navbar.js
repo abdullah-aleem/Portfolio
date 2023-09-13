@@ -20,8 +20,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-function Navbar() {
-
+function Navbar(props) {
+  const {scroll,re}=props;
  
   const [count,setCount]= useState(true)
 
@@ -33,12 +33,18 @@ function Navbar() {
     x.map(y => y === item ? y.current = true :  y.current = false)
     
     updateNavi(x) 
-    
+    if(item.name=="Profile"){
+      scroll(re[0]);
+    }
+    else if(item.name=="Services"){
+      scroll(re[1]);
+    }
     setCount(!count)
-    
+      
     }        
   return (
     <> 
+    <nav className='fixed top-0 left-0 w-full z-10'>
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
@@ -194,6 +200,7 @@ function Navbar() {
 
         
       </div>
+      </nav>
     </>
   )
 }

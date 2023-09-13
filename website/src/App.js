@@ -1,6 +1,6 @@
 import MyContextProvider from "./components/MyContext";
 import Navbar from "./components/Navbar";
-import React from 'react'
+import React, { useRef } from 'react'
 import Profile from "./components/Profile";
 import Services from "./components/Services";
 
@@ -8,11 +8,24 @@ import Services from "./components/Services";
 
 
 function App() {
+  const proRef=useRef(null)
+  const serRef=useRef(null)
+  const scroll=(ref)=>{ 
+    console.log(ref);
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
   return (
     <MyContextProvider>
-      <Navbar />
-      <Profile/>
-      <Services/>
+      <Navbar  scroll={scroll} re={[proRef,serRef]}/>
+    <div ref={proRef}>
+      <Profile />
+    </div>
+    <div ref={serRef}>
+      <Services />
+    </div>
     </MyContextProvider>
   );
 }

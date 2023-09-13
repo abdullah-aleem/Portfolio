@@ -1,24 +1,44 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState, useRef} from 'react'
+import { useMyContext } from './MyContext';
 
 import simage from '../assests/final.jpg'
 import gitimage from '../assests/github2.png'
 import linimage from '../assests/IN.png'
 import mail from '../assests/mail4.png'
+import { CurrencyBangladeshiIcon } from '@heroicons/react/24/outline'
 
 function Profile() {
+
+
     const [emailContent, setEmailContent] = useState('');
     const handlemail= (e)=>{
         e.preventDefault()
         const email = 'abdullahaleem2102@gmail.com';
         const subject = 'Email from portfolio';
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
-        window.location.href = mailtoLink;
+        fetch('http://localhost:3000/sendMail',{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json',
+            },
+            body:JSON.stringify({message:emailContent})
+        }).then(res=>{
+            if(!res.ok){
+                throw new Error('Network response was not ok')
+            }
+            return res.json();
+        }).then(data=>{
+            console.log(data);
+        })
+        // const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+        // window.location.href = mailtoLink;
     }
-    return (
-        <>
-            <div className="flex flex-col overflow-hidden md:flex-row">
 
-                <div className="w-full md:w-2/3 md:mt-20 mt-20 ml-10 flex flex-row ">
+ 
+    return (
+        <  >
+            <div   className="flex flex-col mt-7 overflow-hidden md:flex-row md:mb-40 md:mt-28 bg-color-black">
+
+                <div className="w-full md:w-2/3 md:mt-20 mt-20 ml-5 md:ml-10 flex flex-row ">
                     <div className='w-3/4' >
                         <h1 className="font-bold text-xl md:text-xl lg:text-5xl font-Times New Roman mb-2 text-gray-700">Hi !!! I am </h1>
                         <h1 className="font-bold text-xl md:text-xl lg:text-5xl font-mono italic mb-2 text-green-900">Abdullah Aleem </h1>
@@ -40,7 +60,7 @@ function Profile() {
                 </div>
                 {/* <div className='w-784 overflow-hidden lg:w-786'>
                 </div> */}
-                <div className='flex flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl  md:ml-10 md:mt-20 bg-gray-200 md:w-1100 md:h-1100 '>
+                <div className=' hidden md:flex flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl  md:ml-10 md:mt-20 bg-gray-200 md:w-1100 md:h-1100 '>
 
                     <div className='mt-5  ml-5 md:ml-10 flex flex-row'>
                         <img className=" h-8 w-8 md:h-12 md:w-12 rounded-full " src={linimage} alt="" />
@@ -75,5 +95,6 @@ function Profile() {
         </>
     );
 }
+
 
 export default Profile       
