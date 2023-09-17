@@ -43,7 +43,7 @@ function Profile() {
                         <h1 className="font-bold text-xl md:text-xl lg:text-5xl font-Times New Roman mb-2 text-gray-700">Hi !!! I am </h1>
                         <h1 className="font-bold text-xl md:text-xl lg:text-5xl font-mono italic mb-2 text-green-900">Abdullah Aleem </h1>
 
-                       <p  className='white-space-normal' > I am an enthusiastic and adaptable programmer with a fervent passion for technology.
+                       <p  className='hidden md:block  white-space-normal' > I am an enthusiastic and adaptable programmer with a fervent passion for technology.
                         Currently pursuing a degree in Computer Science from the esteemed National University of Sciences and Technology (NUST),
                         my commitment to expanding my programming prowess is resolute. Demonstrating an unwavering dedication to excellence, I
                         exhibit remarkable consistency and a commendable work ethic. My proficiency transcends the confines of web development,

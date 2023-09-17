@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './model'
 import image from '../assests/final.jpg'
-import im2 from '../assests/full.jpg' 
+import im2 from '../assests/full.jpg'
 import exp from '../assests/exp3.png'
 import webs from '../assests/internet.png'
 import webs2 from '../assests/world-wide-web.png'
@@ -16,6 +17,22 @@ import cv from '../assests/camera-solid.svg'
 import cv2 from '../assests/cpu.png'
 
 export default function Services() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [values, setValues] = useState('')
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  const handleClick = (val) => {
+
+    const a = [{ title: "Web Dev", tech: "Reactjs, Nodejs, MySQL, Firebase, Mongo, Expressjs, Django", tex: "I've been a web developer for nearly four years, and during this time, I've gained experience in various aspects of web development. My focus has been on both front-end and back-end development. I've primarily worked with React.js for the front-end and Node.js with Express for the back-end. However, I'm also skilled in using Django and Flask ." }, 
+    { title: "Desktop Dev", tech: "Python, Java, Tkinter, Java Spring", tex: "I have experience in Java for desktop application development, having created various applications for clients, ranging from single-user tools to commercial software. Additionally, I've worked on Point of Sale (POS) systems. I've also utilized Python to develop single-user applications." }, 
+    { title: "CV/ML based", tech: "Python, TensorFlow, Keras, sklearn, Pandas, Numpy, C++", tex: "In recent years, I've ventured into the exciting realm of Machine Learning and Image Processing applications, a field that particularly captivates me as a computer scientist. Within this domain, my work has spanned from image preprocessing tasks to crafting neural network models for predictive purposes." }, 
+    { title: "Mobile Dev", tech: "React Native, Flutter, Java, Firebase, Mongo", tex: "I have a track record of working as an app developer for multiple clients, along with full-time employment as a Flutter developer. In addition, I achieved a notable accomplishment by winning a Hackathon in Java Android development hosted at a respected university.I possess a strong command of Java, React Native, and Flutter, with React Native being my primary area of expertise. I've gained practical experience and proficiency in these technologies through my work." }, 
+    { title: "Automation App", tech: "Python, OS, C++, Bash", tex: "I've developed various automation applications, ranging from a desktop Screen Time Scheduler to a Windows bash file. Lately, I've been actively focused on creating more automation applications." }];
+
+    setValues(a[val - 1]);
+    console.log(values);
+    openModal()
+  }
   return (
     <div className="w-full h-200 bg-gray-900 pb-20 pt-10">
       <div className='flex flex-col sm:flex-row '>
@@ -23,7 +40,7 @@ export default function Services() {
           <img src={exp} className='h-48 w-60  md:h-68 md:w-72 color-white' />
           <p className='mt-8 white-space-normal text-white text-2xl md:text-3xl ml-5 font-bold w-2/4'>years of experience in solving computational problems</p>
         </div>
-        <p className='mt-8 white-space-normal text-gray-400 text-2xl ml-10 md:ml-60 '>*I have been working as a software developer, dedicated to devising effective solutions for the challenges confronted by my clients. While these represent a portion of my core responsibilities, my skill set extends well beyond these realms. </p>
+        <p className='mt-8 white-space-normal text-gray-400 text-2xl ml-5 md:ml-60 '>*I have been working as a software developer, dedicated to devising effective solutions for the challenges confronted by my clients. While these represent a portion of my core responsibilities, my skill set extends well beyond these realms. </p>
       </div>
       <div className='hidden sm:flex flex-col md:flex-row justify-between'>
         <div class="mt-5 mb-5 ml-5 group h-72 w-60 [perspective:1000px]">
@@ -156,53 +173,62 @@ export default function Services() {
           </div>
         </div>
       </div>
-    <div className=' flex md:hidden mt-6'>
-      <div className='ml-3 w-full flex flex-col '>
-      <div className=' flex flex-row justify-between w-3/3'>
-      <button className=' h-24 w-3/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
-        <div className='flex flex-row'>
-        <img src={webs} className='ml-2 h-8 w-8'/>
-        <img src={webs2} className='ml-2 h-8 w-8'/>
+      <div className=' flex md:hidden mt-6'>
+        <div className='ml-3 w-full flex flex-col '>
+          <div className=' flex flex-row justify-between w-3/3'>
+            <button className=' h-24 w-3/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
+              <div className='flex flex-row'>
+                <img src={webs} className='ml-2 h-8 w-8' />
+                <img src={webs2} className='ml-2 h-8 w-8' />
+              </div>
+              Web Development
+            </button>
+            <button className='ml-1 h-24 w-2/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
+              <div className='flex flex-row'>
+                <img src={moniter} className='ml-8 h-8 w-8' />
+
+              </div>
+              Desktop
+              Apps
+            </button>
+          </div>
+
+          <div className='mt-2 flex flex-row justify-between w-3/3 '>
+            <button className=' h-24 w-1/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
+              <div className='flex flex-row '>
+                <img src={cv2} className='ml-6 h-8 w-8' />
+
+              </div>
+              CV/ML
+            </button>
+            <button className='ml-1 h-24 w-2/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
+              <div className='flex flex-row '>
+                <img src={ios} className='ml-8 h-8 w-8' />
+                <img src={and} className='ml-1 h-8 w-8' />
+
+              </div>
+              Mobile Application
+            </button>
+
+          </div>
         </div>
-        Web Development
-      </button>
-      <button className='ml-1 h-24 w-2/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
-      <div className='flex flex-row'>
-        <img src={moniter} className='ml-8 h-8 w-8'/>
-        
-        </div>
-        Desktop
-        Apps
-      </button>
+        <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
+          <div className='flex flex-row'>
+            <img src={automation} className='ml-4 h-8 w-8 [pointerEvents:none]' />
+            <img src={automation2} className='ml-1 h-8 w-8 [pointerEvents:none]' />
+          </div>
+          Automation
+        </button>
+
       </div>
-      
-      <div className='mt-2 flex flex-row justify-between w-3/3 '>
-      <button className=' h-24 w-1/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
-      <div className='flex flex-row '>
-        <img src={cv2} className='ml-6 h-8 w-8'/>
-        
+      <Modal isOpen={isModalOpen} onClose={closeModal} data={values.title}>
+        <p>{values.tex}</p>
+        <div className="space-x-2">
+          <span className="text-xl font-bold ">Technology: </span>
+
+          <span className="text-lg">{values.tech}</span>
         </div>
-        CV/ML
-      </button>
-      <button className='ml-1 h-24 w-2/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
-      <div className='flex flex-row '>
-        <img src={ios} className='ml-8 h-8 w-8'/>
-        <img src={and} className='ml-1 h-8 w-8'/>
-        
-        </div>
-        Mobile Application
-      </button>
-      
-      </div>
-      </div>
-      <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold'  >
-      <div className='flex flex-row'>
-        <img src={automation} className='ml-4 h-8 w-8'/>        
-        <img src={automation2} className='ml-1 h-8 w-8'/>        
-        </div>
-        Automation
-      </button>
-    </div>
+      </Modal>
     </div>
   )
 }
