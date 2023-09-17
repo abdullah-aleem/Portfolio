@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Modal from './model'
-import image from '../assests/final.jpg'
-import im2 from '../assests/full.jpg'
+
+
 import exp from '../assests/exp3.png'
 import webs from '../assests/internet.png'
 import webs2 from '../assests/world-wide-web.png'
@@ -37,7 +37,7 @@ export default function Services() {
     <div className="w-full h-200 bg-gray-900 pb-20 pt-10">
       <div className='flex flex-col sm:flex-row '>
         <div className='flex flex-row'>
-          <img src={exp} className='h-48 w-60  md:h-68 md:w-72 color-white' />
+          <img src={exp} alt="" className='h-48 w-60  md:h-68 md:w-72 color-white' />
           <p className='mt-8 white-space-normal text-white text-2xl md:text-3xl ml-5 font-bold w-2/4'>years of experience in solving computational problems</p>
         </div>
         <p className='mt-8 white-space-normal text-gray-400 text-2xl ml-5 md:ml-60 '>*I have been working as a software developer, dedicated to devising effective solutions for the challenges confronted by my clients. While these represent a portion of my core responsibilities, my skill set extends well beyond these realms. </p>
@@ -49,14 +49,14 @@ export default function Services() {
               {/* <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" /> */}
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
-                  <img src={webs} className='w-12 h-12 ' />
-                  <img src={webs2} className='w-12 h-12 ml-5' />
+                  <img alt="" src={webs} className='w-12 h-12 ' />
+                  <img alt="" src={webs2} className='w-12 h-12 ml-5' />
                 </div>
 
                 <p className='ml-3 font-bold mt-3'>Web Development</p>
                 <div className='flex flex-row '>
                   <p className=' ml-3 mt-3'>Hover to discover more</p>
-                  < img src={arrow} className='w-8 h-8 ml-2 mt-2' />
+                  < img alt="" src={arrow} className='w-8 h-8 ml-2 mt-2' />
                 </div>
               </div>
             </div>
@@ -74,14 +74,14 @@ export default function Services() {
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
-                  <img src={moniter} className='w-12 h-12 ' />
-                  <img src={moniter2} className='w-8 h-8 ml-2 mt-2' />
+                  <img alt="" src={moniter} className='w-12 h-12 ' />
+                  <img alt="" src={moniter2} className='w-8 h-8 ml-2 mt-2' />
                 </div>
 
                 <p className='ml-3 font-bold mt-3'>Desktop Applications</p>
                 <div className='flex flex-row '>
                   <p className=' ml-3 mt-3'>Hover to discover more</p>
-                  < img src={arrow} className='w-8 h-8 ml-2 mt-2' />
+                  < img alt="" src={arrow} className='w-8 h-8 ml-2 mt-2' />
                 </div>
               </div>
             </div>
@@ -99,14 +99,14 @@ export default function Services() {
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
-                  <img src={automation} className='w-12 h-12 ' />
-                  <img src={automation2} className='w-12 h-12 ml-5' />
+                  <img alt="" src={automation} className='w-12 h-12 ' />
+                  <img alt="" src={automation2} className='w-12 h-12 ml-5' />
                 </div>
 
                 <p className='ml-3 font-bold mt-3'>Automation Softwares</p>
                 <div className='flex flex-row '>
                   <p className=' ml-3 mt-3'>Hover to discover more</p>
-                  < img src={arrow} className='w-8 h-8 ml-2 mt-2' />
+                  < img alt="" src={arrow} className='w-8 h-8 ml-2 mt-2' />
                 </div>
               </div>
             </div>
@@ -125,14 +125,14 @@ export default function Services() {
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
-                  <img src={cv} className='w-12 h-12 ' />
-                  <img src={cv2} className='w-12 h-12 ml-5' />
+                  <img alt="" src={cv} className='w-12 h-12 ' />
+                  <img alt="" src={cv2} className='w-12 h-12 ml-5' />
                 </div>
 
                 <p className='ml-3 font-bold mt-3'>CV And ML Based Apps </p>
                 <div className='flex flex-row '>
                   <p className=' ml-3 mt-3'>Hover to discover more</p>
-                  < img src={arrow} className='w-8 h-8 ml-2 mt-2' />
+                  < img alt="" src={arrow} className='w-8 h-8 ml-2 mt-2' />
                 </div>
               </div></div>
             <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-8 pt-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
@@ -150,15 +150,15 @@ export default function Services() {
             <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
-                  <img src={mobile} className='w-12 h-12 ' />
-                  <img src={and} className='w-12 h-12 ml-5' />
-                  <img src={ios} className='w-12 h-12 ml-5' />
+                  <img alt="" src={mobile} className='w-12 h-12 ' />
+                  <img alt="" src={and} className='w-12 h-12 ml-5' />
+                  <img alt="" src={ios} className='w-12 h-12 ml-5' />
                 </div>
 
                 <p className='ml-3 font-bold mt-3'>Mobile Development</p>
                 <div className='flex flex-row '>
                   <p className=' ml-3 mt-3'>Hover to discover more</p>
-                  < img src={arrow} className='w-8 h-8 ml-2 mt-2' />
+                  < img alt="" src={arrow} className='w-8 h-8 ml-2 mt-2' />
                 </div>
               </div>
             </div>
@@ -178,14 +178,14 @@ export default function Services() {
           <div className=' flex flex-row justify-between w-3/3'>
             <button className=' h-24 w-3/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
               <div className='flex flex-row'>
-                <img src={webs} className='ml-2 h-8 w-8' />
-                <img src={webs2} className='ml-2 h-8 w-8' />
+                <img alt="" src={webs} className='ml-2 h-8 w-8' />
+                <img alt="" src={webs2} className='ml-2 h-8 w-8' />
               </div>
               Web Development
             </button>
             <button className='ml-1 h-24 w-2/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
               <div className='flex flex-row'>
-                <img src={moniter} className='ml-8 h-8 w-8' />
+                <img alt="" src={moniter} className='ml-8 h-8 w-8' />
 
               </div>
               Desktop
@@ -196,15 +196,15 @@ export default function Services() {
           <div className='mt-2 flex flex-row justify-between w-3/3 '>
             <button className=' h-24 w-1/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
               <div className='flex flex-row '>
-                <img src={cv2} className='ml-6 h-8 w-8' />
+                <img alt="" src={cv2} className='ml-6 h-8 w-8' />
 
               </div>
               CV/ML
             </button>
             <button className='ml-1 h-24 w-2/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
               <div className='flex flex-row '>
-                <img src={ios} className='ml-8 h-8 w-8' />
-                <img src={and} className='ml-1 h-8 w-8' />
+                <img alt="" src={ios} className='ml-8 h-8 w-8' />
+                <img alt="" src={and} className='ml-1 h-8 w-8' />
 
               </div>
               Mobile Application
@@ -214,8 +214,8 @@ export default function Services() {
         </div>
         <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
           <div className='flex flex-row'>
-            <img src={automation} className='ml-4 h-8 w-8 [pointerEvents:none]' />
-            <img src={automation2} className='ml-1 h-8 w-8 [pointerEvents:none]' />
+            <img alt="" src={automation} className='ml-4 h-8 w-8 [pointerEvents:none]' />
+            <img alt="" src={automation2} className='ml-1 h-8 w-8 [pointerEvents:none]' />
           </div>
           Automation
         </button>

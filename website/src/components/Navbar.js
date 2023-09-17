@@ -33,10 +33,10 @@ function Navbar(props) {
     x.map(y => y === item ? y.current = true :  y.current = false)
     
     updateNavi(x) 
-    if(item.name=="Profile"){
+    if(item.name==="Profile"){
       scroll(re[0]);
     }
-    else if(item.name=="Services"){
+    else if(item.name==="Services"){
       scroll(re[1]);
     }
     setCount(!count)

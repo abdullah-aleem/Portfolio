@@ -1,11 +1,11 @@
-import React,{useEffect, useState, useRef} from 'react'
-import { useMyContext } from './MyContext';
+import React,{ useState} from 'react'
+
 
 import simage from '../assests/final.jpg'
 import gitimage from '../assests/github2.png'
 import linimage from '../assests/IN.png'
 import mail from '../assests/mail4.png'
-import { CurrencyBangladeshiIcon } from '@heroicons/react/24/outline'
+
 
 function Profile() {
 
@@ -13,8 +13,7 @@ function Profile() {
     const [emailContent, setEmailContent] = useState('');
     const handlemail= (e)=>{
         e.preventDefault()
-        const email = 'abdullahaleem2102@gmail.com';
-        const subject = 'Email from portfolio';
+
         fetch('http://localhost:3000/sendMail',{
             method:'POST',
             headers:{
