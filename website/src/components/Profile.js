@@ -1,37 +1,37 @@
-import React,{ useState} from 'react'
+import React from 'react'
 
-import { Emoji } from 'react-emoji';
-import simage from '../assests/final.jpg'
-import gitimage from '../assests/github2.png'
-import linimage from '../assests/IN.png'
-import mail from '../assests/mail4.png'
-import bgmy from '../assests/perbest.jpg'
+// import { Emoji } from 'react-emoji';
+// import simage from '../assests/final.jpg'
+// import gitimage from '../assests/github2.png'
+// import linimage from '../assests/IN.png'
+// import mail from '../assests/mail4.png'
+// import bgmy from '../assests/perbest.jpg'
 
 
 function Profile() {
 
 
-    const [emailContent, setEmailContent] = useState('');
-    const handlemail= (e)=>{
-        e.preventDefault()
+    // const [emailContent, setEmailContent] = useState('');
+    // const handlemail= (e)=>{
+    //     e.preventDefault()
 
-        fetch('http://localhost:3000/sendMail',{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json',
-            },
-            body:JSON.stringify({message:emailContent})
-        }).then(res=>{
-            if(!res.ok){
-                throw new Error('Network response was not ok')
-            }
-            return res.json();
-        }).then(data=>{
-            console.log(data);
-        })
-        // const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
-        // window.location.href = mailtoLink;
-    }
+    //     fetch('http://localhost:3000/sendMail',{
+    //         method:'POST',
+    //         headers:{
+    //             'Content-Type':'application/json',
+    //         },
+    //         body:JSON.stringify({message:emailContent})
+    //     }).then(res=>{
+    //         if(!res.ok){
+    //             throw new Error('Network response was not ok')
+    //         }
+    //         return res.json();
+    //     }).then(data=>{
+    //         console.log(data);
+    //     })
+    //     // const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+    //     // window.location.href = mailtoLink;
+    // }
 
  
     return (
