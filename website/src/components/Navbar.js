@@ -30,6 +30,7 @@ function Navbar(props) {
   
   function updateS(item) {
     let x = navi;  
+    console.log(item)
     x.map(y => y === item ? y.current = true :  y.current = false)
     
     updateNavi(x) 
@@ -39,14 +40,18 @@ function Navbar(props) {
     else if(item.name==="Services"){
       scroll(re[1]);
     }
-    setCount(!count)
-      
-    }        
+    
+    else if(item.name==="Projects"){
+      console.log('duck')
+      scroll(re[2]);
+    }
+    setCount(!count)  
+  }        
   return (
     <> 
     <nav className='fixed top-0 left-0 w-full z-10'>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-white">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> 
@@ -69,12 +74,13 @@ function Navbar(props) {
                              updateS(item)}}
                             className={classNames(
                               item.current
-                                ? 'bg-gray-900 text-white' 
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                                ? 'bg-white text-gray-600' 
+                                : 'text-gray-300  hover:white',
+                              'py-2  text-sm font-medium relative'
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
+                            {item.current?<div className='absolute  rounded-xl bg-gray-600 w-4 h-1 '  style={{ position: 'absolute', bottom: 0, left: '20%' }}></div>:''}
                             {item.name} 
                           </button>
                         ))} 

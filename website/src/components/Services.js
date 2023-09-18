@@ -34,7 +34,7 @@ export default function Services() {
     openModal()
   }
   return (
-    <div className="w-full h-200 bg-gray-900 pb-20 pt-10">
+    <div className="w-full h-200 bg-gray-500 pb-20 pt-10">
       <div className='flex flex-col sm:flex-row '>
         <div className='flex flex-row'>
           <img src={exp} alt="" className='h-48 w-60  md:h-68 md:w-72 color-white' />
@@ -45,7 +45,7 @@ export default function Services() {
       <div className='hidden sm:flex flex-col md:flex-row justify-between'>
         <div class="mt-5 mb-5 ml-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
+            <div class="absolute inset-0 bg-gray-200 rounded-xl shadow-xl shadow-black/40">
               {/* <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" /> */}
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
@@ -71,7 +71,7 @@ export default function Services() {
         </div>
         <div class="mt-5 mb-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
+            <div class="absolute inset-0 bg-gray-200 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
                   <img alt="" src={moniter} className='w-12 h-12 ' />
@@ -96,7 +96,7 @@ export default function Services() {
         </div>
         <div class="mt-5 mb-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
+            <div class="absolute inset-0 bg-gray-200 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
                   <img alt="" src={automation} className='w-12 h-12 ' />
@@ -122,7 +122,7 @@ export default function Services() {
         </div>
         <div class="mt-5 mb-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
+            <div class="absolute inset-0 bg-gray-200 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
                   <img alt="" src={cv} className='w-12 h-12 ' />
@@ -147,7 +147,7 @@ export default function Services() {
         </div>
         <div class="mt-5 mb-5 mr-5 group h-72 w-60 [perspective:1000px]">
           <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div class="absolute inset-0 bg-gray-700 rounded-xl shadow-xl shadow-black/40">
+            <div class="absolute inset-0 bg-gray-200 rounded-xl shadow-xl shadow-black/40">
               <div className=' mt-32'>
                 <div className='ml-5 flex flex-row'>
                   <img alt="" src={mobile} className='w-12 h-12 ' />
@@ -176,14 +176,14 @@ export default function Services() {
       <div className=' flex md:hidden mt-6'>
         <div className='ml-3 w-full flex flex-col '>
           <div className=' flex flex-row justify-between w-3/3'>
-            <button className=' h-24 w-3/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
+            <button className=' h-24 w-3/4 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
               <div className='flex flex-row'>
                 <img alt="" src={webs} className='ml-2 h-8 w-8' />
                 <img alt="" src={webs2} className='ml-2 h-8 w-8' />
               </div>
               Web Development
             </button>
-            <button className='ml-1 h-24 w-2/4 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
+            <button className='ml-1 h-24 w-2/4 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
               <div className='flex flex-row'>
                 <img alt="" src={moniter} className='ml-8 h-8 w-8' />
 
@@ -194,14 +194,14 @@ export default function Services() {
           </div>
 
           <div className='mt-2 flex flex-row justify-between w-3/3 '>
-            <button className=' h-24 w-1/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
+            <button className=' h-24 w-1/3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
               <div className='flex flex-row '>
                 <img alt="" src={cv2} className='ml-6 h-8 w-8' />
 
               </div>
               CV/ML
             </button>
-            <button className='ml-1 h-24 w-2/3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
+            <button className='ml-1 h-24 w-2/3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
               <div className='flex flex-row '>
                 <img alt="" src={ios} className='ml-8 h-8 w-8' />
                 <img alt="" src={and} className='ml-1 h-8 w-8' />
@@ -212,7 +212,7 @@ export default function Services() {
 
           </div>
         </div>
-        <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-400 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
+        <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
           <div className='flex flex-row'>
             <img alt="" src={automation} className='ml-4 h-8 w-8 [pointerEvents:none]' />
             <img alt="" src={automation2} className='ml-1 h-8 w-8 [pointerEvents:none]' />
