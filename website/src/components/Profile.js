@@ -36,15 +36,15 @@ function Profile() {
  
     return (
         <  >
-            <div   className="flex flex-col mt-7 pb-10 overflow-hidden md:flex-row md:pb-0 md:pt-10 bg-white [height:700px]">
+            <div   className="flex flex-col pt-40 pb-10 overflow-hidden md:flex-row md:pb-0 md:pt-10 bg-white [height:400px] md:[height:700px]">
 
-                <div className="w-full md:w-2/3  ml-5 md:ml-10 flex flex-row justify-center " >
+                <div className="w-full md:w-2/3  ml-5 md:ml-10 flex flex-row md:justify-center " >
                   
-                    <div className='w-2/4 flex flex-col justify-center  [&>h1]:font-bold' >
+                    <div className='w-full md:w-2/4 flex flex-col md:justify-center  [&>h1]:font-bold' >
                       
                         <h1 className="text-xl md:text-xl lg:text-5xl font-Times New Roman mb-2 text-gray-700 ">Hi, I am </h1>
                         <h1 className=" text-xl md:text-xl lg:text-5xl font-mono  mb-2 text-gray-300 ">Abdullah Aleem </h1>
-                        <p className='text-md text-gray-400 font-bold '>Professional Web Developer and AI/ML Specialist 👋</p>
+                        <p className='text-sm text-gray-400 font-bold '>Professional Web Developer and AI/ML Specialist 👋</p>
                         
                        
                     </div>

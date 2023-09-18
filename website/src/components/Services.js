@@ -176,14 +176,14 @@ export default function Services() {
       <div className=' flex md:hidden mt-6'>
         <div className='ml-3 w-full flex flex-col '>
           <div className=' flex flex-row justify-between w-3/3'>
-            <button className=' h-24 w-3/4 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
+            <button className=' h-24 w-3/4 bg-gray-200 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(1) }}>
               <div className='flex flex-row'>
                 <img alt="" src={webs} className='ml-2 h-8 w-8' />
                 <img alt="" src={webs2} className='ml-2 h-8 w-8' />
               </div>
               Web Development
             </button>
-            <button className='ml-1 h-24 w-2/4 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
+            <button className='ml-1 h-24 w-2/4 bg-gray-200 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(2) }} >
               <div className='flex flex-row'>
                 <img alt="" src={moniter} className='ml-8 h-8 w-8' />
 
@@ -194,14 +194,14 @@ export default function Services() {
           </div>
 
           <div className='mt-2 flex flex-row justify-between w-3/3 '>
-            <button className=' h-24 w-1/3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
+            <button className=' h-24 w-1/3 bg-gray-200 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(3) }} >
               <div className='flex flex-row '>
                 <img alt="" src={cv2} className='ml-6 h-8 w-8' />
 
               </div>
               CV/ML
             </button>
-            <button className='ml-1 h-24 w-2/3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
+            <button className='ml-1 h-24 w-2/3 bg-gray-200 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(4) }} >
               <div className='flex flex-row '>
                 <img alt="" src={ios} className='ml-8 h-8 w-8' />
                 <img alt="" src={and} className='ml-1 h-8 w-8' />
@@ -212,7 +212,7 @@ export default function Services() {
 
           </div>
         </div>
-        <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-800 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
+        <button className='ml-1 h-50 w-2/4 mr-3 bg-gray-200 rounded-2xl shadow-xl shadow-black/100 font-bold' onClick={(e) => { e.preventDefault(); handleClick(5) }} >
           <div className='flex flex-row'>
             <img alt="" src={automation} className='ml-4 h-8 w-8 [pointerEvents:none]' />
             <img alt="" src={automation2} className='ml-1 h-8 w-8 [pointerEvents:none]' />
