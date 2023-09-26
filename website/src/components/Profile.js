@@ -1,5 +1,5 @@
 import React from 'react'
-
+import coder from '../assests/coder21.png'
 // import { Emoji } from 'react-emoji';
 // import simage from '../assests/final.jpg'
 // import gitimage from '../assests/github2.png'
@@ -38,23 +38,23 @@ function Profile() {
         <  >
             <div   className="flex flex-col pt-40 pb-10 overflow-hidden md:flex-row md:pb-0 md:pt-10 bg-white [height:400px] md:[height:700px]">
 
-                <div className="w-full md:w-2/3  ml-5 md:ml-10 flex flex-row md:justify-center " >
+                <div className="w-full md:w-2/3  ml-5 md:ml-40 flex flex-row  " >
                   
-                    <div className='w-full md:w-2/4 flex flex-col md:justify-center  [&>h1]:font-bold' >
+                    <div className='w-full  flex flex-col md:justify-center  [&>h1]:font-bold' >
                       
-                        <h1 className="text-xl md:text-xl lg:text-5xl font-Times New Roman mb-2 text-gray-700 ">Hi, I am </h1>
-                        <h1 className=" text-xl md:text-xl lg:text-5xl font-mono  mb-2 text-gray-300 ">Abdullah Aleem </h1>
+                        <h1 className="text-xl md:text-2xl lg:text-6xl font-Times New Roman mb-2 text-gray-700 ">Hi, I am </h1>
+                        <h1 className=" text-xl md:text-2xl lg:text-6xl font-mono  mb-2 text-gray-300 ">Abdullah Aleem </h1>
                         <p className='text-sm text-gray-400 font-bold '>Professional Web Developer and AI/ML Specialist 👋</p>
                         
                        
                     </div>
-                    
+                     
                    
 
                 </div>
-                {/* <div className='w-2/4  flex justify-center bg-blue-00 relative ' style={{height:700}}>
-                    <img src={bgmy} className='absolute ' style={{top:'3%',height:650}}/> 
-                </div>               */}
+                <div className='w-3/4  flex justify-center bg-blue-00 relative ' style={{height:700}}>
+                    <img src={coder} alt="coder" className='absolute ' style={{top:'3%',height:650}}/> 
+                </div>              
                 {/* <div className=' hidden  flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl  md:ml-10 md:mt-20 bg-gray-600 md:w-1100 md:h-1100 '>
 
                     <div className='mt-5  ml-5 md:ml-8 flex flex-row'>

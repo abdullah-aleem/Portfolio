@@ -80,16 +80,16 @@ function Navbar(props) {
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
-                            {item.current?<div className='absolute  rounded-xl bg-gray-600 w-4 h-1 '  style={{ position: 'absolute', bottom: 0, left: '20%' }}></div>:''}
+                            <div className={`w-${item.current ? 'full' : '4'} ml-${item.current?'0':'0'} bg-gray-500 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
                             {item.name} 
                           </button>
-                        ))} 
+                        ))}   
                       </div>
                     </div>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
-                      <button
+                      {/* <button
                         type="button"
                         className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
@@ -97,7 +97,7 @@ function Navbar(props) {
                         <span className="sr-only">View notifications</span>
                         <BellIcon className="h-6 w-6" aria-hidden="true" /> 
                         
-                      </button>
+                      </button> */}
 
                       {/* Profile dropdown */}
                       {/* <Menu as="div" className="relative ml-3"> */}
@@ -105,7 +105,7 @@ function Navbar(props) {
                           {/* <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span> */}
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            {/* <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" /> */}
                           {/* </Menu.Button> */}
                         </div>
                         {/* <Transition
