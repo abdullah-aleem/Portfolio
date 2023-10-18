@@ -43,6 +43,10 @@ function Navbar(props) {
     
     else if(item.name==="Projects"){
       console.log('duck')
+      scroll(re[3]);
+    }
+    else if(item.name==="Proficiencies"){
+      console.log('duck')
       scroll(re[2]);
     }
     setCount(!count)  
@@ -80,7 +84,7 @@ function Navbar(props) {
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
-                            <div className={`w-${item.current ? 'full' : '4'} ml-${item.current?'0':'0'} bg-gray-500 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
+                            <div className={`w-${item.current ? 'full' : '6'} ml-${item.current?'0':'0'} bg-gray-500 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
                             {item.name} 
                           </button>
                         ))}   

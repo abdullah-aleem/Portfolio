@@ -36,7 +36,7 @@ function Profile() {
  
     return (
         <  >
-            <div   className="flex flex-col pt-40 pb-10 overflow-hidden md:flex-row md:pb-0 md:pt-10 bg-white [height:400px] md:[height:700px]">
+            <div   className="flex flex-row pt-40 pb-10 overflow-hidden md:flex-row md:pb-0 md:pt-10 bg-white [height:400px] md:[height:700px]">
 
                 <div className="w-full md:w-2/3  ml-5 md:ml-40 flex flex-row  " >
                   
@@ -53,7 +53,7 @@ function Profile() {
 
                 </div>
                 <div className='w-3/4  flex justify-center bg-blue-00 relative ' style={{height:700}}>
-                    <img src={coder} alt="coder" className='absolute ' style={{top:'3%',height:650}}/> 
+                    <img src={coder} alt="coder" className='absolute h-24 w-24 md:h-96 md:w-96 md:mt-20' style={{top:'3%'}}/> 
                 </div>              
                 {/* <div className=' hidden  flex-col justify-between ml-5 mt-10 mr-5 mb-5 overflow-hidden rounded-xl  md:ml-10 md:mt-20 bg-gray-600 md:w-1100 md:h-1100 '>
 
