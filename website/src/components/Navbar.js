@@ -2,7 +2,7 @@ import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assests/logo.png'
 import { useState } from 'react'
-import { useMyContext } from './MyContext';
+
 import na from '../assests/profile.png'
 
 
@@ -14,40 +14,55 @@ const user = {
 }
 
 
-
-
+const navi=[{
+  "name":'Profile',
+  "current":true,
+},{
+  "name":'Services',
+  "current":false,
+},{
+  "name":'Proficiencies',
+  "current":false,
+},{
+  "name":'Project',
+  "current":false,
+}
+]
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 function Navbar(props) {
-  const {scroll,re}=props;
+  const {scroll}=props;
  
   const [count,setCount]= useState(true)
 
-  const [ navi, updateNavi ] = useMyContext();
+  
  
   
   function updateS(item) {
-    let x = navi;  
-    console.log(item)
-    x.map(y => y === item ? y.current = true :  y.current = false)
     
-    updateNavi(x) 
+    navi.map(x=>x.current=false);
+    item.current=true
+
     if(item.name==="Profile"){
-      scroll(re[0]);
+     scroll("Profile")
+      
     }
     else if(item.name==="Services"){
-      scroll(re[1]);
+      scroll("Services")
     }
     
     else if(item.name==="Projects"){
       console.log('duck')
-      scroll(re[3]);
+      scroll("Project")
     }
     else if(item.name==="Proficiencies"){
       console.log('duck')
-      scroll(re[2]);
+      scroll("Proficencies")
+      
+      
+      
     }
     setCount(!count)  
   }        
@@ -73,7 +88,7 @@ function Navbar(props) {
                         {navi.map((item) => (
                           <button
                             key={item.name}
-                            href={item.href}
+                            
                             onClick={() => {
                              updateS(item)}}
                             className={classNames(
@@ -93,52 +108,11 @@ function Navbar(props) {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
-                      {/* <button
-                        type="button"
-                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      >
-                        <span className="absolute -inset-1.5" />
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" /> 
-                        
-                      </button> */}
-
-                      {/* Profile dropdown */}
-                      {/* <Menu as="div" className="relative ml-3"> */}
+                     
                         <div className='relative ml-3'>
-                          {/* <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <span className="absolute -inset-1.5" />
-                            <span className="sr-only">Open user menu</span> */}
-                            {/* <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" /> */}
-                          {/* </Menu.Button> */}
+                          
                         </div>
-                        {/* <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-100"
-                          enterFrom="transform opacity-0 scale-95"
-                          enterTo="transform opacity-100 scale-100"
-                          leave="transition ease-in duration-75"
-                          leaveFrom="transform opacity-100 scale-100"
-                          leaveTo="transform opacity-0 scale-95"
-                        >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            {userNavigation.map((item) => (
-                              <Menu.Item key={item.name}>
-                                {({ active }) => (
-                                  <a
-                                    href={item.href}
-                                    className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
-                                    )}
-                                  >
-                                    {item.name}
-                                  </a>
-                                )}
-                              </Menu.Item>
-                            ))}
-                          </Menu.Items>
-                        </Transition> */}
+                        
                     </div>
                   </div>
                   <div className="-mr-2 flex md:hidden">
@@ -190,18 +164,7 @@ function Navbar(props) {
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-                  {/* <div className="mt-3 space-y-1 px-2">
-                    {userNavigation.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-                      >
-                        {item.name}
-                      </Disclosure.Button>
-                    ))}
-                  </div> */}
+                  
                 </div>
               </Disclosure.Panel>
             </>

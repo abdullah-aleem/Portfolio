@@ -1,6 +1,6 @@
-import MyContextProvider from "./components/MyContext";
+
 import Navbar from "./components/Navbar";
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Profile from "./components/Profile";
 import Services from "./components/Services";
 import Projects from "./components/projects";
@@ -10,35 +10,37 @@ import Proficencies from "./components/Proficencies";
 
 
 function App() {
-  const proRef=useRef(null)
-  const serRef=useRef(null)
-  const jectRef=useRef(null)
-  const skilRef=useRef(null)
+  const [count,setCount]= useState(true)
+  const [currentlyActive,setCurrentlyActive]=useState({"Profile":true,"Project":false,"Proficencies":false,"Services":false})
   const scroll=(ref)=>{ 
-    console.log(ref);
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+    setCurrentlyActive(prevState => {
+      let updatedState = { ...prevState }; 
   
+      Object.keys(updatedState).forEach(item => {
+        updatedState[item] = (ref === item); 
+      });
+    
+      return updatedState;
+    });
+    
+    }
   return (
-    <MyContextProvider>
-      <Navbar  scroll={scroll} re={[proRef,serRef,skilRef,jectRef]}/>
-    <div ref={proRef}>
+    
+   <>
+      <Navbar  scroll={scroll} />
+    <div  style={{display:currentlyActive["Profile"]?"block":"none"}}>
       <Profile />
     </div>
-    <div ref={serRef}>
+    <div  style={{display:currentlyActive["Services"]?"block":"none"}}>
       <Services />
     </div>
-    <div ref={skilRef}>
-    
+    <div  style={{display:currentlyActive["Proficencies"]?"block":"none"}}>
     <Proficencies/>
     </div>
-    
-    <div ref={jectRef}>
+    <div style={{display:currentlyActive["Project"]?"block":"none"}}>
       <Projects/>
     </div>
-    </MyContextProvider>
+    </>
   );
 }
 
