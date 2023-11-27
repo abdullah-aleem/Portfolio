@@ -22,7 +22,6 @@ export default function Services() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   const handleClick = (val) => {
-
     const a = [{ title: "Web Dev", tech: "Reactjs, Nodejs, MySQL, Firebase, Mongo, Expressjs, Django", tex: "I've been a web developer for nearly four years, and during this time, I've gained experience in various aspects of web development. My focus has been on both front-end and back-end development. I've primarily worked with React.js for the front-end and Node.js with Express for the back-end. However, I'm also skilled in using Django and Flask ." }, 
     { title: "Desktop Dev", tech: "Python, Java, Tkinter, Java Spring", tex: "I have experience in Java for desktop application development, having created various applications for clients, ranging from single-user tools to commercial software. Additionally, I've worked on Point of Sale (POS) systems. I've also utilized Python to develop single-user applications." }, 
     { title: "CV/ML based", tech: "Python, TensorFlow, Keras, sklearn, Pandas, Numpy, C++", tex: "In recent years, I've ventured into the exciting realm of Machine Learning and Image Processing applications, a field that particularly captivates me as a computer scientist. Within this domain, my work has spanned from image preprocessing tasks to crafting neural network models for predictive purposes." }, 

@@ -92,10 +92,10 @@ function Navbar(props) {
                             onClick={() => {
                              updateS(item)}}
                             className={classNames(
-                              item.current
+                              'py-2  font-medium relative',item.current
                                 ? 'bg-white text-gray-600' 
-                                : 'text-gray-300  hover:white',
-                              'py-2  text-sm font-medium relative'
+                                : 'text-gray-300 text-sm transition-all duration-300 hover:text-gray-800 hover:text-base',
+                              
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
