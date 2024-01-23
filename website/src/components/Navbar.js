@@ -68,9 +68,9 @@ function Navbar(props) {
   }        
   return (
     <> 
-    <nav className='fixed top-0 left-0 w-full z-10'>
-      <div className="min-h-full">
-        <Disclosure as="nav" className="bg-white">
+    <nav className=' fixed top-0 left-0 w-full z-10 '>
+      <div className="ml-1 mr-1 min-h-full bg-white rounded-3xl">
+        <Disclosure as="nav" className="bg-white " style={{borderRadius:'200px'}}>
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> 
@@ -81,7 +81,7 @@ function Navbar(props) {
                         className="h-8 w-8"
                         src={logo}
                         alt="Your Company"
-                      />
+                      /> 
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
@@ -93,13 +93,13 @@ function Navbar(props) {
                              updateS(item)}}
                             className={classNames(
                               'py-2  font-medium relative',item.current
-                                ? 'bg-white text-gray-600' 
-                                : 'text-gray-300 text-sm transition-all duration-300 hover:text-gray-800 hover:text-base',
+                                ? 'bg-white text-black' 
+                                : 'text-gray-500 text-sm transition-all duration-300 hover:text-gray-600 hover:text-base',
                               
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
-                            <div className={`w-${item.current ? 'full' : '6'} ml-${item.current?'0':'0'} bg-gray-500 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
+                            <div className={`w-${item.current ? 'full' : '6'} ml-${item.current?'0':'0'} bg-gray-300 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
                             {item.name} 
                           </button>
                         ))}   

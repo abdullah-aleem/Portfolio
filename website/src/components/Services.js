@@ -33,7 +33,7 @@ export default function Services() {
     openModal()
   }
   return (
-    <div className="w-full h-200 bg-gray-500 pb-20 pt-10">
+    <div className="w-full h-screen bg-white pt-10">
       <div className='flex flex-col sm:flex-row '>
         <div className='flex flex-row'>
           <img src={exp} alt="" className='h-48 w-60  md:h-68 md:w-72 color-white' />
