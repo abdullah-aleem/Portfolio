@@ -19,7 +19,11 @@ module.exports = {
       height:{
         '1100':'370px',
         'img':'500px',
-        'ful':'900px'
+        'ful':'900px',
+        'custom':'2000px'
+      },
+      left:{
+        'custom':'500px'
       }
     
     },  

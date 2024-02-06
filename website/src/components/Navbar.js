@@ -18,13 +18,13 @@ const navi=[{
   "name":'Profile',
   "current":true,
 },{
-  "name":'Services',
+  "name":'About',
   "current":false,
 },{
   "name":'Proficiencies',
   "current":false,
 },{
-  "name":'Project',
+  "name":'Projects',
   "current":false,
 }
 ]
@@ -49,7 +49,7 @@ function Navbar(props) {
      scroll("Profile")
       
     }
-    else if(item.name==="Services"){
+    else if(item.name==="About"){
       scroll("Services")
     }
     
@@ -68,21 +68,18 @@ function Navbar(props) {
   }        
   return (
     <> 
-    <nav className=' fixed top-0 left-0 w-full z-10 '>
-      <div className="ml-1 mr-1 min-h-full bg-white rounded-3xl">
+    <nav className=' fixed top-0 left-0 w-full z-50 '>
+      <div className="ml-1 mr-1 min-h-full  "> 
         <Disclosure as="nav" className="bg-white " style={{borderRadius:'200px'}}>
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> 
-                <div className="flex h-16 items-center justify-between">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-8 w-8"
-                        src={logo}
-                        alt="Your Company"
-                      /> 
+              <div className=" max-w-7xl px-4 sm:px-6 lg:px-8"> 
+                <div className="flex h-16  items-center">
+                <div className="ml-0">
+                      <p>Abdullah Aleem.</p>
                     </div>
+                  <div className="mx-auto flex items-center">
+                  
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navi.map((item) => (
