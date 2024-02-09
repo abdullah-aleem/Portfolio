@@ -10,7 +10,7 @@ import Proficencies from "./components/Proficencies";
 
 
 function App() {
-  const [count,setCount]= useState(true)
+ 
   const [currentlyActive,setCurrentlyActive]=useState({"Profile":true,"Project":false,"Proficencies":false,"Services":false})
   const scroll=(ref)=>{ 
     setCurrentlyActive(prevState => {

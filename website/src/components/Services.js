@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import js from '../assests/js.svg'
 import mongo from '../assests/mongo.svg'
@@ -15,21 +15,9 @@ import anaconda from '../assests/anaconda.svg'
 import jupyter from '../assests/jupyter.svg'
 
 export default function Services() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [values, setValues] = useState('')
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-  const handleClick = (val) => {
-    const a = [{ title: "Web Dev", tech: "Reactjs, Nodejs, MySQL, Firebase, Mongo, Expressjs, Django", tex: "I've been a web developer for nearly four years, and during this time, I've gained experience in various aspects of web development. My focus has been on both front-end and back-end development. I've primarily worked with React.js for the front-end and Node.js with Express for the back-end. However, I'm also skilled in using Django and Flask ." },
-    { title: "Desktop Dev", tech: "Python, Java, Tkinter, Java Spring", tex: "I have experience in Java for desktop application development, having created various applications for clients, ranging from single-user tools to commercial software. Additionally, I've worked on Point of Sale (POS) systems. I've also utilized Python to develop single-user applications." },
-    { title: "CV/ML based", tech: "Python, TensorFlow, Keras, sklearn, Pandas, Numpy, C++", tex: "In recent years, I've ventured into the exciting realm of Machine Learning and Image Processing applications, a field that particularly captivates me as a computer scientist. Within this domain, my work has spanned from image preprocessing tasks to crafting neural network models for predictive purposes." },
-    { title: "Mobile Dev", tech: "React Native, Flutter, Java, Firebase, Mongo", tex: "I have a track record of working as an app developer for multiple clients, along with full-time employment as a Flutter developer. In addition, I achieved a notable accomplishment by winning a Hackathon in Java Android development hosted at a respected university.I possess a strong command of Java, React Native, and Flutter, with React Native being my primary area of expertise. I've gained practical experience and proficiency in these technologies through my work." },
-    { title: "Automation App", tech: "Python, OS, C++, Bash", tex: "I've developed various automation applications, ranging from a desktop Screen Time Scheduler to a Windows bash file. Lately, I've been actively focused on creating more automation applications." }];
+ 
+ 
 
-    setValues(a[val - 1]);
-    console.log(values);
-    openModal()
-  }
   return (
     <div className='flex container mx-auto mt-20 w-3/4 md:w-2/4 border-2 border-gray-300 rounded-3xl mb-10' >
       <div className='flex flex-col border-3  border-gray-200  ml-2 md:ml-10 items-centen Relative pt-5 pb-5 '>
@@ -59,12 +47,12 @@ export default function Services() {
       </ul>
  
           <div className='flex flex-row [&>img]:w-7 [&>img]:h-7 [&>img]:md:w-10 [&>img]:md:h-10 [&>img]:mr-1'>
-            <img src={html} />
-            <img src={js} />
-            <img src={react} />
-            <img src={node} />
-            <img src={mongo} />
-            <img src={mysql} />
+            <img alt="hello" src={html} />
+            <img alt="hello"  src={js} />
+            <img alt="hello" src={react} />
+            <img alt="hello" src={node} />
+            <img alt="hello" src={mongo} />
+            <img alt="hello" src={mysql} />
           </div>
         </div>
         <div className=' flex flex-col ml-4 relative  pl-2 border-gray-500 border-l-2 border-rounded-xl'>
@@ -85,11 +73,11 @@ export default function Services() {
         
       </ul>
             <div className='flex flex-row [&>img]:w-7 [&>img]:h-7 [&>img]:md:w-10 [&>img]:md:h-10 [&>img]:mr-1'>
-              <img  src={flutter} />
-              <img  src={java} />
-              <img  src={react} />
-              <img  src={andriod} />
-              <img  src={ios} />
+              <img alt="hello"  src={flutter} />
+              <img alt="hello"  src={java} />
+              <img alt="hello"   src={react} />
+              <img alt="hello"  src={andriod} />
+              <img alt="hello" src={ios} />
               
             </div>
           </div>
@@ -113,9 +101,9 @@ export default function Services() {
        
       </ul>
             <div className='flex flex-row [&>img]:w-7 [&>img]:h-7 [&>img]:md:w-10 [&>img]:md:h-10 [&>img]:mr-1'>
-              <img  src={python} />
-              <img  src={jupyter} />
-              <img  src={anaconda} />
+              <img alt="hello"  src={python} />
+              <img alt="hello"  src={jupyter} />
+              <img alt="hello"  src={anaconda} />
             </div>
           </div>
         </div>

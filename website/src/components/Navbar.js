@@ -1,5 +1,5 @@
 import { Disclosure} from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { BellIcon} from '@heroicons/react/24/outline'
 
 import { useState } from 'react'
 
@@ -17,7 +17,7 @@ const user = {
 const navi=[{
   "name":'Home',
   "current":true,
-},{
+},{ 
   "name":'About',
   "current":false,
 },{
