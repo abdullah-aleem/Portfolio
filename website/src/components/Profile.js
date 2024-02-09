@@ -1,7 +1,6 @@
 import React from 'react'
 import coder from '../assests/coder21.png'
-import { Emoji } from 'react-emoji';
-import simage from '../assests/final.jpg'
+
 import gitimage from '../assests/github-square-svgrepo-com.svg'
 import linimage from '../assests/linkedin21.svg'
 import mail from '../assests/gmail-svgrepo-com.svg'

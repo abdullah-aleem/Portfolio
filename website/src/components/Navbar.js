@@ -1,6 +1,6 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../assests/logo.png'
+
 import { useState } from 'react'
 
 import na from '../assests/profile.png'

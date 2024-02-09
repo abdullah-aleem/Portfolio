@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from './model'
+
 import js from '../assests/js.svg'
 import mongo from '../assests/mongo.svg'
 import node from '../assests/node-js.svg'

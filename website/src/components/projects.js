@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from 'react-slick'
+
 import portfolio from '../assests/portfolio.png'
 
 function Projects() {
