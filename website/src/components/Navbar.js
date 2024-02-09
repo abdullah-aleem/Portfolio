@@ -15,13 +15,10 @@ const user = {
 
 
 const navi=[{
-  "name":'Profile',
+  "name":'Home',
   "current":true,
 },{
   "name":'About',
-  "current":false,
-},{
-  "name":'Proficiencies',
   "current":false,
 },{
   "name":'Projects',
@@ -45,7 +42,7 @@ function Navbar(props) {
     navi.map(x=>x.current=false);
     item.current=true
 
-    if(item.name==="Profile"){
+    if(item.name==="Home"){
      scroll("Profile")
       
     }
@@ -75,13 +72,13 @@ function Navbar(props) {
             <>
               <div className=" max-w-7xl px-4 sm:px-6 lg:px-8"> 
                 <div className="flex h-16  items-center">
-                <div className="ml-0">
-                      <p>Abdullah Aleem.</p>
+                <div className="ml-0 ">
+                      <p className='text-sm md:text-lg'>Abdullah Aleem.</p>
                     </div>
                   <div className="mx-auto flex items-center">
                   
-                    <div className="hidden md:block">
-                      <div className="ml-10 flex items-baseline space-x-4">
+                    <div className=" md:block">
+                      <div className="ml-10 flex items-baseline space-x-2 md:space-x-4">
                         {navi.map((item) => (
                           <button
                             key={item.name}
@@ -90,8 +87,8 @@ function Navbar(props) {
                              updateS(item)}}
                             className={classNames(
                               'py-2  font-medium relative',item.current
-                                ? 'bg-white text-black' 
-                                : 'text-gray-500 text-sm transition-all duration-300 hover:text-gray-600 hover:text-base',
+                                ? 'bg-white text-black [font-size:12px]  md:text-lg' 
+                                : 'text-gray-500 [font-size:12px] md:text-sm transition-all duration-300 hover:text-gray-600 md:hover:text-base ',
                               
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
@@ -112,17 +109,7 @@ function Navbar(props) {
                         
                     </div>
                   </div>
-                  <div className="-mr-2 flex md:hidden">
-                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="absolute -inset-0.5" />
-                      <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                      ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                      )}
-                    </Disclosure.Button>
-                  </div>
+                  
                 </div>
               </div>
 
