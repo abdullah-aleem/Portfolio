@@ -5,7 +5,6 @@ import gitimage from '../assests/github-square-svgrepo-com.svg'
 import linimage from '../assests/linkedin21.svg'
 import mail from '../assests/gmail-svgrepo-com.svg'
 import insta from '../assests/instagram-svgrepo-com.svg'
-// import bgmy from '../assests/perbest.jpg'
 
 
 function Profile() {
