@@ -1,6 +1,6 @@
 
 import Navbar from "./components/Navbar";
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import Profile from "./components/Profile";
 import Services from "./components/Services";
 import Projects from "./components/projects";
