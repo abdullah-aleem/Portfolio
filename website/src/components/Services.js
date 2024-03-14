@@ -10,24 +10,36 @@ import flutter from '../assests/flutter.svg'
 import ios from '../assests/ios.svg'
 import andriod from '../assests/android1.svg'
 import java from '../assests/java.svg'
+
 import python from '../assests/python.svg'
 import anaconda from '../assests/anaconda.svg'
 import jupyter from '../assests/jupyter.svg'
-
+import bg from '../assests/about6.svg'
+import bg1 from '../assests/about5.svg'
 export default function Services() {
  
  
 
   return (
-    <div className='flex container mx-auto mt-20 w-3/4 md:w-2/4 border-4 border-gray-300 rounded-3xl mb-10 shadow-sm' >
-      <div className='flex flex-col border-3  border-gray-200  ml-2 md:ml-10 items-centen Relative pt-5 pb-5 '>
+    <>
+       <div className="fixed top-0 -right-1/2 -z-10  bg-cover bg-no-repeat bg-center w-full h-full"  style={{
+        backgroundImage: `url(${bg})`,
+       }}>
+      </div>
+      {/* <div className="fixed top-0 -left-1/2 -z-10  bg-cover bg-no-repeat bg-center w-full h-full"  style={{
+        backgroundImage: `url(${bg})`,
+       }}>
+      </div> */}
+    <div className='flex container mx-auto mt-20 w-5/6 md:w-2/4 border-4 border-gray-300 rounded-3xl mb-10 shadow-sm bg-transparent backdrop-blur-sm' >
+       
+      <div className='flex flex-col border-3  border-gray-200  ml-2 md:ml-10 items-centen Relative pt-5 pb-5 z-10 '>
         <div className='flex flex-col'>
           <h1 className=' ml-1 md:ml-2 text-2xl md:text-5xl text-black'>Abdullah <span className='text-2xl md:text-5xl text-gray-500'>Aleem</span> </h1>
 
 
         </div>
         <h1 className='ml-2 md:ml-4 text-xl md:text-4xl mt-4 md:mt-5 text-gray-500'>Services</h1>
-        <div className='flex flex-col mt-2  flex ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+        <div className='flex flex-col mt-2   ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
 
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-lg md:text-2xl  text-gray-600'>Web development</h2>
@@ -145,6 +157,6 @@ export default function Services() {
          </div>
       </div>
     </div>
-
+    </>
   )
 }
