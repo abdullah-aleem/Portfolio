@@ -14,7 +14,7 @@ import java from '../assests/java.svg'
 import python from '../assests/python.svg'
 import anaconda from '../assests/anaconda.svg'
 import jupyter from '../assests/jupyter.svg'
-import bg from '../assests/about6.svg'
+import bg from '../assests/about10.svg'
 
 export default function Services() {
  
@@ -22,14 +22,11 @@ export default function Services() {
 
   return (
     <>
-       <div className="fixed top-0 -right-1/2 -z-10  bg-cover bg-no-repeat bg-center w-full h-full"  style={{
+       <div className="fixed top-0 -right-1/2 -z-10  bg-cover bg-no-repeat bg-center w-screen h-screen"  style={{
         backgroundImage: `url(${bg})`,
        }}>
       </div>
-      {/* <div className="fixed top-0 -left-1/2 -z-10  bg-cover bg-no-repeat bg-center w-full h-full"  style={{
-        backgroundImage: `url(${bg})`,
-       }}>
-      </div> */}
+     
     <div className='flex container mx-auto mt-20 w-5/6 md:w-2/4 border-4 border-gray-300 rounded-3xl mb-10 shadow-sm bg-transparent backdrop-blur-sm' >
        
       <div className='flex flex-col border-3  border-gray-200  ml-2 md:ml-10 items-centen Relative pt-5 pb-5 z-10 '>

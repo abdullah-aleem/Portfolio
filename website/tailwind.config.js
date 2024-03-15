@@ -24,6 +24,9 @@ module.exports = {
       },
       left:{
         'custom':'500px'
+      },
+      colors:{
+        'cyan':'#20124D'
       }
     
     },  

@@ -20,8 +20,8 @@ function Profile() {
                     <div className='w-full  flex flex-col md:justify-center  [&>h1]:font-bold' >
                       
                         <h1 className="text-2xl md:text-2xl lg:text-8xl font-Times New Roman mb-2 text-gray-700 mt-10">Hi, I am </h1>
-                        <h1 className=" text-2xl md:text-2xl lg:text-8xl font-mono  mb-2 text-gray-300 ">Abdullah Aleem </h1>
-                        <p className='[font-size:10px] text-gray-400 font-bold sm:text-lg '>Professional Web Developer and DL Engineer 👋</p>
+                        <h1 className=" text-2xl md:text-2xl lg:text-8xl font-mono  mb-2 text-gray-500 ">Abdullah Aleem </h1>
+                        <p className='[font-size:10px] text-cyan font-bold sm:text-lg '>Professional Web Developer & much more...👋</p>
                         <div className="flex flex-row space-x-3">
                         <a href="https://linkedin.com/in/abdullah-aleem2102" target="_blank" rel="noopener noreferrer">
                         <img  className="mt-6  h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3"  src={linimage} alt="" />

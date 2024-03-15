@@ -67,7 +67,7 @@ function Navbar(props) {
     <> 
     <nav className=' fixed top-0 left-0 w-full z-50 '>
       <div className="ml-1 mr-1 min-h-full  "> 
-        <Disclosure as="nav" className="bg-white " style={{borderRadius:'200px'}}>
+        <Disclosure as="nav" className="bg-white" style={{borderRadius:'200px'}}>
           {({ open }) => (
             <>
               <div className=" max-w-7xl px-4 sm:px-6 lg:px-8"> 
@@ -87,13 +87,13 @@ function Navbar(props) {
                              updateS(item)}}
                             className={classNames(
                               'py-2  font-medium relative',item.current
-                                ? 'bg-white text-black [font-size:12px]  md:text-lg' 
+                                ? 'bg-trasparent text-black [font-size:12px]  md:text-lg' 
                                 : 'text-gray-500 [font-size:12px] md:text-sm transition-all duration-300 hover:text-gray-600 md:hover:text-base ',
                               
                             )}  
                             aria-current={item.current ? 'page' : undefined} 
                           >
-                            <div className={`w-${item.current ? 'full' : '6'} ml-${item.current?'0':'0'} bg-gray-300 h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
+                            <div className={`w-${item.current ? 'full' : '6'} ml-${item.current?'0':'0'} bg-cyan h-1 rounded-xl transition-width duration-1000 ease-in-out`}  style={{ position: 'absolute', bottom: 0, left: '0' }}></div>
                             {item.name} 
                           </button>
                         ))}   
