@@ -15,7 +15,7 @@ import python from '../assests/python.svg'
 import anaconda from '../assests/anaconda.svg'
 import jupyter from '../assests/jupyter.svg'
 import bg from '../assests/about6.svg'
-import bg1 from '../assests/about5.svg'
+
 export default function Services() {
  
  
