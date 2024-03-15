@@ -117,7 +117,7 @@ export default function Services() {
           </div>
         </div>
         <h1 className='ml-2 md:ml-4 text-xl md:text-4xl mt-4 md:mt-5 text-gray-500'>Work</h1>
-        <div className='flex flex-col mt-2  flex ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+        <div className='flex flex-col mt-2   ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
 
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-small text-gray-600 mt-1'>Nov 2023-Present</h2>
@@ -125,7 +125,7 @@ export default function Services() {
           <p>MERN Full Stack Developer</p>
           
         </div>
-        <div className='flex flex-col   flex ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+        <div className='flex flex-col    ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
           <div className='mt-5 '>
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-small text-gray-600 mt-1'>July 2023-Aug 2023</h2>
@@ -135,7 +135,7 @@ export default function Services() {
          </div>
          </div>
          <h1 className='ml-2 md:ml-4 text-xl md:text-4xl mt-4 md:mt-5 text-gray-500'>Achievements</h1>
-        <div className='flex flex-col mt-2  flex ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+        <div className='flex flex-col mt-2  ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
 
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-small text-gray-600 mt-1'>May 2022</h2>
@@ -143,7 +143,7 @@ export default function Services() {
           <p>National Level Software Development Hackathon, FAST</p>
           
         </div>
-        <div className='flex flex-col   flex ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+        <div className='flex flex-col  ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
           <div className='mt-5 '>
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-small text-gray-600 mt-1'>June 2019-June 2021</h2>
