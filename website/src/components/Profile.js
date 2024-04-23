@@ -5,7 +5,7 @@ import gitimage from '../assests/github-square-svgrepo-com.svg'
 import linimage from '../assests/linkedin21.svg'
 import mail from '../assests/gmail-svgrepo-com.svg'
 import insta from '../assests/instagram-svgrepo-com.svg'
-
+import Typewriter from './typeWriter'
 
 function Profile() {
 
@@ -21,7 +21,8 @@ function Profile() {
                       
                         <h1 className="text-2xl md:text-2xl lg:text-8xl font-Times New Roman mb-2 text-gray-700 mt-10">Hi, I am </h1>
                         <h1 className=" text-2xl md:text-2xl lg:text-8xl font-mono  mb-2 text-gray-500 ">Abdullah Aleem </h1>
-                        <p className='[font-size:10px] text-cyan font-bold sm:text-lg '>Professional Web Developer & much more...👋</p>
+                        
+                        <Typewriter text="Professional Web Developer & much more...👋" />
                         <div className="flex flex-row space-x-3">
                         <a href="https://linkedin.com/in/abdullah-aleem2102" target="_blank" rel="noopener noreferrer">
                         <img  className="mt-6  h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3"  src={linimage} alt="" />

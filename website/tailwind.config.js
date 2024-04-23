@@ -26,7 +26,8 @@ module.exports = {
         'custom':'500px'
       },
       colors:{
-        'cyan':'#20124D'
+        'cyan':'#20124D',
+        'primary':'#002754'
       }
     
     },  
