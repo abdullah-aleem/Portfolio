@@ -19,7 +19,7 @@ This portfolio website is built using React, showcasing my web development skill
 
 ## Deployment
 
-The website is deployed using [htpas.com](https://www.htpas.com), a free hosting platform. You can visit the live website at [https://www.htpas.com](https://www.htpas.com).
+The website is deployed using [netlify](https://www.netlify.com/), a free hosting platform. You can visit the live website at [abdullahaleem21.netlify.app](https://abdullahaleem21.netlify.app).
 
 ## Getting Started
 
