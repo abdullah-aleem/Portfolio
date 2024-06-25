@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a developer. You can visit the live website at [htpas.com](https://www.htpas.com).
+Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a developer. You can visit the live website at [abdullahaleem21.netlify.app](https://abdullahaleem21.netlify.app).
 
 ## Overview
 
