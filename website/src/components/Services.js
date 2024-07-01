@@ -94,11 +94,17 @@ export default function Services() {
         <div className='flex flex-col ml-4 relative  pl-4 border-gray-500 border-l-2 border-rounded-xl'>
           <div className='mt-5'>
             <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
-            <h2 className='text-lg md:text-2xl text-gray-600'>Automation/Scripting</h2>
+            <h2 className='text-lg md:text-2xl text-gray-600'>AI/ML</h2>
 
             <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span> Python
+        </li>
+        <li className="flex items-center text-base">
+          <span className="mr-2">&#8226;</span> TensorFlow
+        </li>
+        <li className="flex items-center text-base">
+          <span className="mr-2">&#8226;</span> Pytorch
         </li>
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span> C++
@@ -130,7 +136,7 @@ export default function Services() {
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
           <h2 className='text-small text-gray-600 mt-1'>July 2023-Aug 2023</h2>
           <p>Hamson Tech</p>
-          <p>Flutter Junior Developer</p>
+          <p>Intern Software Developer</p>
          
          </div>
          </div>
