@@ -34,7 +34,7 @@ function Profile() {
                         <img className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={mail} alt="" />
                         </a>
                         <a href="https://instagram.com/abdullah_abdul_aleem?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                        <img className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={insta} alt="" />
+                        <img rel='preload' className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={insta} alt="" />
                         </a>
                         </div>
                     </div>
