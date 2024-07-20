@@ -1,5 +1,5 @@
 import React from 'react'
-import coder from '../assests/coder21.png'
+import coder from '../assests/coder21.webp'
 
 import gitimage from '../assests/github-square-svgrepo-com.svg'
 import linimage from '../assests/linkedin21.svg'
