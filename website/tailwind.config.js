@@ -14,12 +14,13 @@ module.exports = {
         '786': '200px',
         '784':'150px',
         '1100':'450px',
-        'img':'500px'
+        'img':'500px',
+        'ful':'600px',
       },
       height:{
         '1100':'370px',
         'img':'500px',
-        'ful':'900px',
+        'ful':'700px',
         'custom':'2000px'
       },
       left:{
