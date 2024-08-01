@@ -126,7 +126,7 @@ export default function Services() {
         <div className='flex flex-col mt-2   ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
 
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
-          <h2 className='text-small text-gray-600 mt-1'>Nov 2023-Present</h2>
+          <h2 className='text-small text-gray-600 mt-1'>Nov 2023-June 2024</h2>
           <p>DataEye</p>
           <p>MERN Full Stack Developer</p>
           

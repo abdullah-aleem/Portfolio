@@ -28,7 +28,20 @@ module.exports = {
       },
       colors:{
         'cyan':'#20124D',
-        'primary':'#002754'
+        'primary':'#002754',
+        'custom1':"#37ecba",
+        'custom2':"#72afd3",
+        'custom3':"#84fab0",
+        'custom4':"#8fd3f4",
+        'custom5':"#fccb90",
+        'custom6':"#d57eeb",
+        'custom7':"#30cfd0",
+        'custom8':"#330867",
+        'custom9':"#9890e3",
+        'custom10':"#b1f4cf",
+        'custom11':"#6a11cb",
+        'custom12':"#2575fc",
+
       }
     
     },  

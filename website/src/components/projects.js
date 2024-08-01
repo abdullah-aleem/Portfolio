@@ -11,9 +11,9 @@ function Projects() {
 
   return (
     <div className=' pb-10 pt-10 md:pt-20 bg-white grid gril-cols-1 gap-6 place-items-center    '>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex  '>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex bg-gradient-to-r from-custom7 to-custom8'>
 
-        <div className='w-full h-full flex  gap-4  overflow-hidden     rounded-3xl justify-center '>
+        <div className='w-full h-full flex  gap-4  overflow-hidden     rounded-3xl justify-center  '>
           <div className='w-2/4 p-4'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
@@ -58,7 +58,7 @@ function Projects() {
 
         </div>
       </div>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center'>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center bg-gradient-to-r from-custom3 to-custom4'>
 
         <div className='w-full flex items-center  gap-4  overflow-hidden    rounded-3xl '>
           <div className='w-1/3 p-4'>
@@ -95,7 +95,7 @@ function Projects() {
 
         </div>
       </div>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center'>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center bg-gradient-to-r from-custom5 to-custom6'>
 
         <div className='w-full flex items-center  gap-4  overflow-hidden    rounded-3xl '>
           <div className='w-1/3 p-4'>
@@ -132,7 +132,7 @@ function Projects() {
 
         </div>
       </div>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center'>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center bg-gradient-to-r from-custom1 to-custom2'>
 
         <div className='w-full flex items-center  gap-4  overflow-hidden    rounded-3xl '>
           <div className='w-1/3 p-4'>
@@ -167,7 +167,7 @@ function Projects() {
 
         </div>
       </div>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center'>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center bg-gradient-to-r from-custom9 to-custom10'>
 
         <div className='w-full flex items-center  gap-4  overflow-hidden    rounded-3xl '>
           <div className='w-1/3 p-4'>
@@ -203,7 +203,7 @@ function Projects() {
 
         </div>
       </div>
-      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center'>
+      <div className='grid-item bg-gray-100 rounded-3xl w-2/3 h-ful shadow-primary shadow-xl flex items-center justify-center bg-gradient-to-r from-custom11 to-custom12'>
 
         <div className='w-full flex items-center  gap-4  overflow-hidden    rounded-3xl '>
           <div className='w-1/3 p-4'>
