@@ -24,8 +24,8 @@ function Projects() {
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
 
 
               </div>
@@ -57,7 +57,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
@@ -70,15 +70,17 @@ function Projects() {
 
 
           <div className='m-4 flex flex-col justify-around w-1/2 '>
-            <h1 className='text-5xl text-white font-bold'>PORTFOLIO WEBSITE</h1>
+            <h1 className='text-5xl text-white font-bold'>ENHANCED DES</h1>
             <p className='text-white'>
-              Portfolio website built with React and styled using Tailwind CSS, featuring a modern and responsive design. The site ensures a seamless experience across all devices, from desktops to smartphones, adapting effortlessly to various screen sizes. The sleek and intuitive interface showcases my projects, skills, and accomplishments in web development, providing detailed insights into my expertise. Each section is thoughtfully designed to highlight my capabilities, from coding and development projects to freelance work and hackathon achievements. This portfolio is a testament to my commitment to creating dynamic and user-friendly web applications, demonstrating my proficiency in utilizing the MERN stack and other cutting-edge technologies.
-
+            Enhanced DES is a cutting-edge project featuring a robust backend built with Flask and a sleek frontend crafted using React and Tailwind CSS. This project leverages the power of AES and DES encryption algorithms, combining them to enhance security by generating keys through HMAC functions. The website offers a seamless and interactive demo, allowing users to experience the process of encoding and decoding data with this advanced encryption technique. With a focus on both security and user experience, Enhanced DES showcases a sophisticated blend of cryptographic expertise and modern web development.
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Python</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Flask</p>
+                
 
 
               </div>
@@ -110,8 +112,8 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
-            <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
+            <img alt="hello" src={des} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
 
@@ -130,8 +132,8 @@ function Projects() {
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
 
 
               </div>
@@ -163,7 +165,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
@@ -184,8 +186,8 @@ function Projects() {
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
 
 
               </div>
@@ -217,7 +219,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
@@ -238,8 +240,8 @@ function Projects() {
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
 
 
               </div>
@@ -271,7 +273,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
@@ -291,8 +293,8 @@ function Projects() {
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
-                <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Reactjs</p>
+                <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Tailwind</p>
 
 
               </div>
@@ -324,7 +326,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='w-2/4 p-4 h-1/2'>
+          <div className='w-2/4 p-4 h-1/2 mt-10'>
             <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
           </div>
 
@@ -339,10 +341,10 @@ function Projects() {
               <div>
             <h1 className='text-2xl font-bold'>K-Means Clustering Parallelisation</h1>
             <div className='flex gap-4 mt-6 items-center'>
-              <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Python</p>
-              <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>MPI</p>
-              <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>IPC</p>
-              <p className=' bg-primary bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>OS</p>
+              <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>Python</p>
+              <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>MPI</p>
+              <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>IPC</p>
+              <p className=' bg-custom8 bg-opacity-80 rounded-xl py-1 px-2  text-gray-200'>OS</p>
 
             </div>
             <div className='flex mt-4 '>

@@ -30,7 +30,7 @@ module.exports = {
         'cyan':'#20124D',
         'primary':'#002754',
         'custom1':"#37ecba",
-        'custom2':"#72afd3",
+        'custom2':"#96e6a1",
         'custom3':"#84fab0",
         'custom4':"#8fd3f4",
         'custom5':"#fccb90",
@@ -39,8 +39,8 @@ module.exports = {
         'custom8':"#330867",
         'custom9':"#9890e3",
         'custom10':"#b1f4cf",
-        'custom11':"#6a11cb",
-        'custom12':"#2575fc",
+        'custom11':"#f77062",
+        'custom12':"#fe5196",
 
       }
     
