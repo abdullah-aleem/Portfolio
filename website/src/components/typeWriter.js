@@ -2,21 +2,40 @@ import React, { useState, useEffect } from 'react';
 
 const Typewriter = ({ text }) => {
   const [displayText, setDisplayText] = useState('');
-  
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
+  const [speed, setSpeed] = useState(200); // Typing speed in milliseconds
+
   useEffect(() => {
-    let currentIndex = 0;
-    const interval = setInterval(() => {
-      setDisplayText(text.substring(0, currentIndex));
-      currentIndex++;
-      if (currentIndex > text.length) {
-        clearInterval(interval);
+    const handleTyping = () => {
+      if (isDeleting) {
+        setDisplayText(text.substring(0, textIndex));
+        setTextIndex(prevIndex => prevIndex - 1);
+        if (textIndex === 0) {
+          setIsDeleting(false);
+          setSpeed(100); // Reset speed after deleting
+        }
+      } else {
+        setDisplayText(text.substring(0, textIndex));
+        setTextIndex(prevIndex => prevIndex + 1);
+        if (textIndex === text.length) {
+          setIsDeleting(true);
+          setSpeed(200); // Speed of deleting
+        }
       }
-    }, 100); // Adjust the speed of typing here (milliseconds)
-    
-    return () => clearInterval(interval);
-  }, [text]);
-  
-  return <p className='[font-size:10px] text-cyan font-bold sm:text-lg '>{displayText}</p>;
-}
+    };
+
+    const timer = setInterval(handleTyping, speed);
+
+    return () => clearInterval(timer);
+  }, [text, isDeleting, textIndex, speed]);
+
+  return (
+    <p className='[font-size:10px] text-cyan font-bold sm:text-lg'>
+      {displayText}
+      <span className="blinking-cursor text-custom11">|</span>
+    </p>
+  );
+};
 
 export default Typewriter;

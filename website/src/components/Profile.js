@@ -1,6 +1,6 @@
 import React from 'react'
 import coder from '../assests/coder21.webp'
-
+import '../index.css'
 import gitimage from '../assests/github-square-svgrepo-com.svg'
 import linimage from '../assests/linkedin21.svg'
 import mail from '../assests/gmail-svgrepo-com.svg'
@@ -25,16 +25,16 @@ function Profile() {
                         <Typewriter text="Professional Web Developer & much more...👋" />
                         <div className="flex flex-row space-x-3">
                         <a href="https://linkedin.com/in/abdullah-aleem2102" target="_blank" rel="noopener noreferrer">
-                        <img  className="mt-6  h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3"  src={linimage} alt="" />
+                        <img  className="mt-6  h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:animate-spin"  src={linimage} alt="" />
                         </a>
                         <a href="https://www.github.com/abdullah-aleem" target="_blank" rel="noopener noreferrer">
-                        <img className="mt-6 h-8 w-8  md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={gitimage} alt="" />
+                        <img className="mt-6 h-8 w-8  md:h-10 md:w-10 rounded-full transition-all duration-300 hover:animate-spin" src={gitimage} alt="" />
                         </a>
                         <a href="mailto:abdullahaleem2102" target="_blank" rel='noreferrer' >
-                        <img className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={mail} alt="" />
+                        <img className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:animate-spin " src={mail} alt="" />
                         </a>
                         <a href="https://instagram.com/abdullah_abdul_aleem?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                        <img rel='preload' className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:w-12 hover:h-12 hover:mt-3" src={insta} alt="" />
+                        <img rel='preload' className="mt-6 h-8 w-8 md:h-10 md:w-10 rounded-full transition-all duration-300 hover:animate-spin" src={insta} alt="" />
                         </a>
                         </div>
                     </div>
