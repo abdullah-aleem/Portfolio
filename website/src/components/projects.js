@@ -72,7 +72,7 @@ function Projects() {
           <div className='m-4 flex flex-col justify-around w-1/2 '>
             <h1 className='text-5xl text-white font-bold'>ENHANCED-DES</h1>
             <p className='text-white'>
-            Enhanced DES is a cutting-edge project featuring a robust backend built with Flask and a sleek frontend crafted using React and Tailwind CSS. This project leverages the power of AES and DES encryption algorithms, combining them to enhance security by generating keys through HMAC functions. The website offers a seamless and interactive demo, allowing users to experience the process of encoding and decoding data with this advanced encryption technique. With a focus on both security and user experience, Enhanced DES showcases a sophisticated blend of cryptographic expertise and modern web development.
+            Enhanced-DES is a cutting-edge project featuring a robust backend built with Flask and a sleek frontend crafted using React and Tailwind CSS. This project leverages the power of AES and DES encryption algorithms, combining them to enhance security by generating keys through HMAC functions. The website offers a seamless and interactive demo, allowing users to experience the process of encoding and decoding data with this advanced encryption technique. With a focus on both security and user experience, Enhanced DES showcases a sophisticated blend of cryptographic expertise and modern web development.
             </p>
             <div>
               <div className='flex gap-4 mt-6 items-center'>
