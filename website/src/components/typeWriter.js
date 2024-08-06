@@ -19,8 +19,12 @@ const Typewriter = ({ text }) => {
         setDisplayText(text.substring(0, textIndex));
         setTextIndex(prevIndex => prevIndex + 1);
         if (textIndex === text.length) {
-          setIsDeleting(true);
-          setSpeed(200); // Speed of deleting
+          setTimeout(() => {
+            setIsDeleting(true);
+            setSpeed(10);
+          }, 1000);
+          
+         
         }
       }
     };
@@ -31,9 +35,9 @@ const Typewriter = ({ text }) => {
   }, [text, isDeleting, textIndex, speed]);
 
   return (
-    <p className='[font-size:10px] text-cyan font-bold sm:text-lg'>
+    <p className='[font-size:10px] text-cyan font-bold sm:text-xl'>
       {displayText}
-      <span className="blinking-cursor text-custom11">|</span>
+      <span className="blinking-cursor  text-custom11">|</span>
     </p>
   );
 };
