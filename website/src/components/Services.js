@@ -22,7 +22,7 @@ export default function Services() {
 
   return (
     <>
-       <div className="fixed top-0 -right-1/2 -z-10  bg-cover bg-no-repeat bg-center w-screen h-screen"  style={{
+       <div className="fixed top-0 -right-1/2 -z-10  bg-cover bg-no-repeat bg-center w-screen h-screen "  style={{
         backgroundImage: `url(${bg})`,
        }}>
       </div>
