@@ -33,7 +33,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/Portfolio">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -44,7 +44,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://abdullahaleem21.netlify.app/">
                   <span>Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -91,7 +91,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/EnhancedDES">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -102,7 +102,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://enchanced-des.netlify.app">
                   <span>Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -151,7 +151,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/AirBNB_Booking">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -162,7 +162,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
+                {/* <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
                   <span>Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -173,7 +173,7 @@ function Projects() {
 
 
 
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/OtakuGuide">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -220,18 +220,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
-                  <span>Website</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-
-
-
-
-
-
-                </a>
+               
               </div>
             </div>
           </div>
@@ -269,7 +258,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/Parallelisation-Of-K-Means-Clustering">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -280,7 +269,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
+                {/* <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
                   <span>Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -291,7 +280,7 @@ function Projects() {
 
 
 
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -327,7 +316,7 @@ function Projects() {
 
               </div>
               <div className='flex mt-4  gap-4'>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://somo.com">
+                <a className='bg-gray-100 px-2 py-1  rounded-xl flex items-center space-x-1' href="https://github.com/abdullah-aleem/Single-Image-Super-Resolution">
                   <span>Github</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" vieWEBSITEwBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
@@ -338,7 +327,7 @@ function Projects() {
 
 
                 </a>
-                <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
+                {/* <a className='bg-gray-100 px-2 py-1  rounded-xl flex  space-x-1' href="https://somo.com">
                   <span>Website</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.2} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -349,7 +338,7 @@ function Projects() {
 
 
 
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
