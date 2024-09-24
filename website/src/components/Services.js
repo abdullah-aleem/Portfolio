@@ -46,7 +46,7 @@ export default function Services() {
           <span className="mr-2 md ">&#8226;</span> MERN
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> Django
+          <span className="mr-2">&#8226;</span> NEXTjs
         </li>
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span> Flask
@@ -98,19 +98,19 @@ export default function Services() {
 
             <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> Python
+          <span className="mr-2">&#8226;</span>DNN
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> TensorFlow
+          <span className="mr-2">&#8226;</span> Classification
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> Pytorch
+          <span className="mr-2">&#8226;</span> BDA
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> C++
+          <span className="mr-2">&#8226;</span> C++/C
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> C
+          <span className="mr-2">&#8226;</span> Reinforcement learning
         </li>
        
        

@@ -3,9 +3,9 @@ import React from 'react'
 import portfolio from '../assests/portfolio.png'
 import des from '../assests/des.png'
 import airbnb from '../assests/airbnb.png'
-import kmean from '../assests/kmean.png'
+import kmean from '../assests/kmeans.jpeg'
 import otaku from '../assests/otaku.png'
-import resolution from '../assests/resolution.png'
+import resolution from '../assests/cnn.png'
 function Projects() {
 
 
@@ -60,8 +60,8 @@ function Projects() {
             </div>
           </div>
 
-          <div className='  md:w-2/4 p-1  md:p-4 md:h-1/2 md:mt-10'>
-            <img alt="hello" src={portfolio} className='w-full h-full object-cover  rounded-3xl' />
+          <div className='  md:w-2/4 p-1  md:p-4 md:h-1/2 md:mt-10 '>
+            <img alt="hello" src={portfolio} className='w-full h-full object-fill  rounded-3xl' />
           </div>
 
 
@@ -119,7 +119,7 @@ function Projects() {
           </div>
 
           <div className=' md:w-2/4 p-1 md:p-4 h-1/2 mt-2 md:mt-10'>
-            <img alt="hello" src={des} className='w-full h-full object-cover  rounded-3xl' />
+            <img alt="hello" src={des} className='w-full h-full object-fit  rounded-3xl' />
           </div>
 
 
@@ -179,7 +179,7 @@ function Projects() {
           </div>
 
           <div className='md:w-2/4 p-1 md:p-4 md:h-1/2 md:mt-10'>
-            <img alt="hello" src={airbnb} className='w-full h-full object-cover  rounded-3xl' />
+            <img alt="hello" src={airbnb} className='w-full h-full object-fit  rounded-3xl' />
           </div>
 
 
@@ -226,7 +226,7 @@ function Projects() {
           </div>
 
           <div className='md:w-2/4 md:p-4 p-1 md:h-1/2 md:mt-10'>
-            <img alt="hello" src={otaku} className='w-full h-full object-cover  rounded-3xl' />
+            <img alt="hello" src={otaku} className='w-full h-full object-fit  rounded-3xl' />
           </div>
 
 
@@ -286,7 +286,7 @@ function Projects() {
           </div>
 
           <div className='md:w-2/4 md:p-4 p-1 md:h-1/2 md:mt-10'>
-            <img alt="hello" src={kmean} className='w-full h-full object-cover  rounded-3xl' />
+            <img alt="hello" src={kmean} className='w-full h-full object-fit  rounded-3xl' />
           </div>
 
 
@@ -344,7 +344,7 @@ function Projects() {
           </div>
 
           <div className='md:w-2/4 md:p-4 p-1 md:h-1/2 md:mt-10'>
-            <img alt="hello" src={resolution} className='w-full h-full object-cover  rounded-3xl' />
+            <img alt="hello" src={resolution} className='w-full h-full object-fit  rounded-3xl' />
           </div>
 
 
