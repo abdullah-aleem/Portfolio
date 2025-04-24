@@ -43,10 +43,13 @@ export default function Services() {
         
       <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
         <li className="flex items-center text-base">
-          <span className="mr-2 md ">&#8226;</span> MERN
+          <span className="mr-2 md ">&#8226;</span> Reactjs
         </li>
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> NEXTjs
+          <span className="mr-2 md ">&#8226;</span> Nodejs
+        </li>
+        <li className="flex items-center text-base">
+          <span className="mr-2">&#8226;</span> NestJs
         </li>
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span> Flask
@@ -70,7 +73,7 @@ export default function Services() {
             <h2 className='text-lg md:text-2xl text-gray-600 '>Android development</h2>
             <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
         <li className="flex items-center text-base">
-          <span className="mr-2">&#8226;</span> Flutter
+          <span className="mr-2">&#8226;</span> React Native
         </li>
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span> Java
@@ -93,10 +96,10 @@ export default function Services() {
         </div>
         <div className='flex flex-col ml-4 relative  pl-4 border-gray-500 border-l-2 border-rounded-xl'>
           <div className='mt-5'>
-            <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
-            <h2 className='text-lg md:text-2xl text-gray-600'>AI/ML</h2>
+            {/* <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div> */}
+            {/* <h2 className='text-lg md:text-2xl text-gray-600'>AI/ML</h2> */}
 
-            <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
+            {/* <ul className="grid grid-cols-2 gap-2 w-40 text-sm md:text-lg">
         <li className="flex items-center text-base">
           <span className="mr-2">&#8226;</span>DNN
         </li>
@@ -114,15 +117,23 @@ export default function Services() {
         </li>
        
        
-      </ul>
-            <div className='flex flex-row ml-4 [&>img]:w-7 [&>img]:h-7 [&>img]:md:w-10 [&>img]:md:h-10 [&>img]:mr-1'>
+      </ul> */}
+            {/* <div className='flex flex-row ml-4 [&>img]:w-7 [&>img]:h-7 [&>img]:md:w-10 [&>img]:md:h-10 [&>img]:mr-1'>
               <img alt="hello"  src={python} />
               <img alt="hello"  src={jupyter} />
               <img alt="hello"  src={anaconda} />
-            </div>
+            </div> */}
           </div>
         </div>
         <h1 className='ml-2 md:ml-4 text-xl md:text-4xl mt-4 md:mt-5 text-gray-500'>Work</h1>
+        <div className='flex flex-col mt-2   ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
+
+          <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
+          <h2 className='text-small text-gray-600 mt-1'>March 2025-Present</h2>
+          <p>Shadiyana</p>
+          <p>Intern Developer</p>
+          
+        </div>
         <div className='flex flex-col mt-2   ml-4  relative  pl-3 border-gray-500 border-l-2 border-rounded-xl '>
 
           <div className='rounded-xl w-3 h-3 bg-gray-500 absolute -left-1.5 mt-2.5'></div>
